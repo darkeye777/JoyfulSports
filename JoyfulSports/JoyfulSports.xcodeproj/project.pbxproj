@@ -11,14 +11,26 @@
 		D00FA5FA19D4442B0000004A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F919D4442B0000004A /* CoreGraphics.framework */; };
 		D00FA5FC19D4442B0000004A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5FB19D4442B0000004A /* UIKit.framework */; };
 		D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00FA60019D4442B0000004A /* InfoPlist.strings */; };
-		D00FA60419D4442B0000004A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA60319D4442B0000004A /* main.m */; };
-		D00FA60819D4442B0000004A /* YDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA60719D4442B0000004A /* YDAppDelegate.m */; };
 		D00FA60A19D4442B0000004A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00FA60919D4442B0000004A /* Images.xcassets */; };
 		D00FA61119D4442B0000004A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA61019D4442B0000004A /* XCTest.framework */; };
 		D00FA61219D4442C0000004A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F719D4442B0000004A /* Foundation.framework */; };
 		D00FA61319D4442C0000004A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5FB19D4442B0000004A /* UIKit.framework */; };
 		D00FA61B19D4442C0000004A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00FA61919D4442C0000004A /* InfoPlist.strings */; };
 		D00FA61D19D4442C0000004A /* JoyfulSportsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA61C19D4442C0000004A /* JoyfulSportsTests.m */; };
+		D00FA62C19D445710000004A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA62919D445710000004A /* main.m */; };
+		D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA62B19D445710000004A /* YDAppDelegate.m */; };
+		D00FA64719D447870000004A /* YDCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64619D447870000004A /* YDCourseViewController.m */; };
+		D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64919D447990000004A /* YDMoreViewController.m */; };
+		D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64C19D447A70000004A /* YDPlanViewController.m */; };
+		D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64F19D447B70000004A /* YDRecordViewController.m */; };
+		D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65219D447CB0000004A /* YDSportsViewController.m */; };
+		D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65519D4481C0000004A /* YDTabBarViewController.m */; };
+		D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65819D4482F0000004A /* YDNavigationViewController.m */; };
+		D00FA65E19D449370000004A /* YDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65B19D449370000004A /* YDTabBar.m */; };
+		D00FA65F19D449370000004A /* YDTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65D19D449370000004A /* YDTabBarButton.m */; };
+		D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66B19D458840000004A /* UIBarButtonItem+TZ.m */; };
+		D00FA67119D458840000004A /* UIImage+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66D19D458840000004A /* UIImage+TZ.m */; };
+		D00FA67219D458840000004A /* UIView+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66F19D458840000004A /* UIView+TZ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +50,40 @@
 		D00FA5FB19D4442B0000004A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyfulSports-Info.plist"; sourceTree = "<group>"; };
 		D00FA60119D4442B0000004A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D00FA60319D4442B0000004A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D00FA60519D4442B0000004A /* JoyfulSports-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JoyfulSports-Prefix.pch"; sourceTree = "<group>"; };
-		D00FA60619D4442B0000004A /* YDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAppDelegate.h; sourceTree = "<group>"; };
-		D00FA60719D4442B0000004A /* YDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAppDelegate.m; sourceTree = "<group>"; };
 		D00FA60919D4442B0000004A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D00FA60F19D4442B0000004A /* JoyfulSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyfulSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00FA61019D4442B0000004A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D00FA61819D4442C0000004A /* JoyfulSportsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyfulSportsTests-Info.plist"; sourceTree = "<group>"; };
 		D00FA61A19D4442C0000004A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00FA61C19D4442C0000004A /* JoyfulSportsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoyfulSportsTests.m; sourceTree = "<group>"; };
+		D00FA62919D445710000004A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D00FA62A19D445710000004A /* YDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAppDelegate.h; sourceTree = "<group>"; };
+		D00FA62B19D445710000004A /* YDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAppDelegate.m; sourceTree = "<group>"; };
+		D00FA64519D447870000004A /* YDCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCourseViewController.h; sourceTree = "<group>"; };
+		D00FA64619D447870000004A /* YDCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCourseViewController.m; sourceTree = "<group>"; };
+		D00FA64819D447990000004A /* YDMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMoreViewController.h; sourceTree = "<group>"; };
+		D00FA64919D447990000004A /* YDMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMoreViewController.m; sourceTree = "<group>"; };
+		D00FA64B19D447A70000004A /* YDPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPlanViewController.h; sourceTree = "<group>"; };
+		D00FA64C19D447A70000004A /* YDPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPlanViewController.m; sourceTree = "<group>"; };
+		D00FA64E19D447B70000004A /* YDRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRecordViewController.h; sourceTree = "<group>"; };
+		D00FA64F19D447B70000004A /* YDRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRecordViewController.m; sourceTree = "<group>"; };
+		D00FA65119D447CB0000004A /* YDSportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsViewController.h; sourceTree = "<group>"; };
+		D00FA65219D447CB0000004A /* YDSportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsViewController.m; sourceTree = "<group>"; };
+		D00FA65419D4481C0000004A /* YDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTabBarViewController.h; sourceTree = "<group>"; };
+		D00FA65519D4481C0000004A /* YDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTabBarViewController.m; sourceTree = "<group>"; };
+		D00FA65719D4482F0000004A /* YDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNavigationViewController.h; sourceTree = "<group>"; };
+		D00FA65819D4482F0000004A /* YDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNavigationViewController.m; sourceTree = "<group>"; };
+		D00FA65A19D449370000004A /* YDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTabBar.h; sourceTree = "<group>"; };
+		D00FA65B19D449370000004A /* YDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTabBar.m; sourceTree = "<group>"; };
+		D00FA65C19D449370000004A /* YDTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTabBarButton.h; sourceTree = "<group>"; };
+		D00FA65D19D449370000004A /* YDTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTabBarButton.m; sourceTree = "<group>"; };
+		D00FA66A19D458840000004A /* UIBarButtonItem+TZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TZ.h"; sourceTree = "<group>"; };
+		D00FA66B19D458840000004A /* UIBarButtonItem+TZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TZ.m"; sourceTree = "<group>"; };
+		D00FA66C19D458840000004A /* UIImage+TZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TZ.h"; sourceTree = "<group>"; };
+		D00FA66D19D458840000004A /* UIImage+TZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TZ.m"; sourceTree = "<group>"; };
+		D00FA66E19D458840000004A /* UIView+TZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TZ.h"; sourceTree = "<group>"; };
+		D00FA66F19D458840000004A /* UIView+TZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TZ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +143,7 @@
 		D00FA5FD19D4442B0000004A /* JoyfulSports */ = {
 			isa = PBXGroup;
 			children = (
-				D00FA60619D4442B0000004A /* YDAppDelegate.h */,
-				D00FA60719D4442B0000004A /* YDAppDelegate.m */,
-				D00FA60919D4442B0000004A /* Images.xcassets */,
+				D00FA62619D445710000004A /* Classes */,
 				D00FA5FE19D4442B0000004A /* Supporting Files */,
 			);
 			path = JoyfulSports;
@@ -118,9 +152,9 @@
 		D00FA5FE19D4442B0000004A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D00FA60919D4442B0000004A /* Images.xcassets */,
 				D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */,
 				D00FA60019D4442B0000004A /* InfoPlist.strings */,
-				D00FA60319D4442B0000004A /* main.m */,
 				D00FA60519D4442B0000004A /* JoyfulSports-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -142,6 +176,248 @@
 				D00FA61919D4442C0000004A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D00FA62619D445710000004A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA63119D447410000004A /* Course */,
+				D00FA63519D447410000004A /* More */,
+				D00FA63919D447410000004A /* Plan */,
+				D00FA63D19D447410000004A /* Record */,
+				D00FA64119D447410000004A /* Sports */,
+				D00FA62719D445710000004A /* Main */,
+				D00FA62819D445710000004A /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D00FA62719D445710000004A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA66019D449F00000004A /* Category */,
+				D00FA62E19D4465A0000004A /* Controller */,
+				D00FA62F19D4465A0000004A /* Model */,
+				D00FA63019D4465A0000004A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D00FA62819D445710000004A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA62919D445710000004A /* main.m */,
+				D00FA62A19D445710000004A /* YDAppDelegate.h */,
+				D00FA62B19D445710000004A /* YDAppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D00FA62E19D4465A0000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA65419D4481C0000004A /* YDTabBarViewController.h */,
+				D00FA65519D4481C0000004A /* YDTabBarViewController.m */,
+				D00FA65719D4482F0000004A /* YDNavigationViewController.h */,
+				D00FA65819D4482F0000004A /* YDNavigationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA62F19D4465A0000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA63019D4465A0000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA65A19D449370000004A /* YDTabBar.h */,
+				D00FA65B19D449370000004A /* YDTabBar.m */,
+				D00FA65C19D449370000004A /* YDTabBarButton.h */,
+				D00FA65D19D449370000004A /* YDTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA63119D447410000004A /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA63219D447410000004A /* Controller */,
+				D00FA63319D447410000004A /* Model */,
+				D00FA63419D447410000004A /* View */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		D00FA63219D447410000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA64519D447870000004A /* YDCourseViewController.h */,
+				D00FA64619D447870000004A /* YDCourseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA63319D447410000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA63419D447410000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA63519D447410000004A /* More */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA63619D447410000004A /* Controller */,
+				D00FA63719D447410000004A /* Model */,
+				D00FA63819D447410000004A /* View */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		D00FA63619D447410000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA64819D447990000004A /* YDMoreViewController.h */,
+				D00FA64919D447990000004A /* YDMoreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA63719D447410000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA63819D447410000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA63919D447410000004A /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA63A19D447410000004A /* Controller */,
+				D00FA63B19D447410000004A /* Model */,
+				D00FA63C19D447410000004A /* View */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		D00FA63A19D447410000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA64B19D447A70000004A /* YDPlanViewController.h */,
+				D00FA64C19D447A70000004A /* YDPlanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA63B19D447410000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA63C19D447410000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA63D19D447410000004A /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA63E19D447410000004A /* Controller */,
+				D00FA63F19D447410000004A /* Model */,
+				D00FA64019D447410000004A /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		D00FA63E19D447410000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA64E19D447B70000004A /* YDRecordViewController.h */,
+				D00FA64F19D447B70000004A /* YDRecordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA63F19D447410000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA64019D447410000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA64119D447410000004A /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA64219D447410000004A /* Controller */,
+				D00FA64319D447410000004A /* Model */,
+				D00FA64419D447410000004A /* View */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		D00FA64219D447410000004A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA65119D447CB0000004A /* YDSportsViewController.h */,
+				D00FA65219D447CB0000004A /* YDSportsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D00FA64319D447410000004A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00FA64419D447410000004A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00FA66019D449F00000004A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D00FA66A19D458840000004A /* UIBarButtonItem+TZ.h */,
+				D00FA66B19D458840000004A /* UIBarButtonItem+TZ.m */,
+				D00FA66C19D458840000004A /* UIImage+TZ.h */,
+				D00FA66D19D458840000004A /* UIImage+TZ.m */,
+				D00FA66E19D458840000004A /* UIView+TZ.h */,
+				D00FA66F19D458840000004A /* UIView+TZ.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +516,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00FA60419D4442B0000004A /* main.m in Sources */,
-				D00FA60819D4442B0000004A /* YDAppDelegate.m in Sources */,
+				D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */,
+				D00FA67119D458840000004A /* UIImage+TZ.m in Sources */,
+				D00FA67219D458840000004A /* UIView+TZ.m in Sources */,
+				D00FA65F19D449370000004A /* YDTabBarButton.m in Sources */,
+				D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */,
+				D00FA62C19D445710000004A /* main.m in Sources */,
+				D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */,
+				D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */,
+				D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */,
+				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,
+				D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */,
+				D00FA64719D447870000004A /* YDCourseViewController.m in Sources */,
+				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
+				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

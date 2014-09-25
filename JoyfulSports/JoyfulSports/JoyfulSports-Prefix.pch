@@ -13,4 +13,19 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+//分类
+#import "UIView+TZ.h"
+#import "UIImage+TZ.h"
+
+//是否为iOS7以上
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+
+//自定义log
+#ifdef DEBUG
+#define YDLog(...) NSLog(__VA_ARGS__)
+#else
+#define YDLog(...)
+#endif
+
 #endif
