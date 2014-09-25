@@ -8,6 +8,7 @@
 
 #import "YDAppDelegate.h"
 #import "YDTabBarViewController.h"
+#import <MAMapKit/MAMapKit.h>
 
 @implementation YDAppDelegate
 
@@ -18,6 +19,9 @@
     
     YDTabBarViewController *tabBarVC = [[YDTabBarViewController alloc] init];
     self.window.rootViewController = tabBarVC;
+    
+    //地图apiKey
+    [MAMapServices sharedServices].apiKey =@"e46b6db9cfa968b554ebfb3221eb4762";
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

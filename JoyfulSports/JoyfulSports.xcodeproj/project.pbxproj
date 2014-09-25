@@ -31,6 +31,16 @@
 		D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66B19D458840000004A /* UIBarButtonItem+TZ.m */; };
 		D00FA67119D458840000004A /* UIImage+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66D19D458840000004A /* UIImage+TZ.m */; };
 		D00FA67219D458840000004A /* UIView+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66F19D458840000004A /* UIView+TZ.m */; };
+		D00FA67419D45C920000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67319D45C920000004A /* MAMapKit.framework */; };
+		D00FA67619D45CB60000004A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67519D45CB60000004A /* CoreLocation.framework */; };
+		D00FA67819D45CC20000004A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67719D45CC20000004A /* QuartzCore.framework */; };
+		D00FA67A19D45CD00000004A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67919D45CD00000004A /* SystemConfiguration.framework */; };
+		D00FA67C19D45CDC0000004A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67B19D45CDC0000004A /* CoreTelephony.framework */; };
+		D00FA67E19D45CE70000004A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67D19D45CE70000004A /* libz.dylib */; };
+		D00FA68019D45CFF0000004A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67F19D45CFF0000004A /* OpenGLES.framework */; };
+		D00FA68219D45D110000004A /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */; };
+		D00FA68419D45D1C0000004A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA68319D45D1C0000004A /* Security.framework */; };
+		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +94,16 @@
 		D00FA66D19D458840000004A /* UIImage+TZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TZ.m"; sourceTree = "<group>"; };
 		D00FA66E19D458840000004A /* UIView+TZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TZ.h"; sourceTree = "<group>"; };
 		D00FA66F19D458840000004A /* UIView+TZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TZ.m"; sourceTree = "<group>"; };
+		D00FA67319D45C920000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = "../../地图/AMap_iOS_API_V2/MAMapKit.framework"; sourceTree = "<group>"; };
+		D00FA67519D45CB60000004A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D00FA67719D45CC20000004A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D00FA67919D45CD00000004A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D00FA67B19D45CDC0000004A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D00FA67D19D45CE70000004A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D00FA67F19D45CFF0000004A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		D00FA68319D45D1C0000004A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D00FA68519D45D3A0000004A /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +111,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00FA68419D45D1C0000004A /* Security.framework in Frameworks */,
+				D00FA68219D45D110000004A /* libstdc++.6.0.9.dylib in Frameworks */,
+				D00FA68019D45CFF0000004A /* OpenGLES.framework in Frameworks */,
+				D00FA67E19D45CE70000004A /* libz.dylib in Frameworks */,
+				D00FA67C19D45CDC0000004A /* CoreTelephony.framework in Frameworks */,
+				D00FA67A19D45CD00000004A /* SystemConfiguration.framework in Frameworks */,
+				D00FA67819D45CC20000004A /* QuartzCore.framework in Frameworks */,
+				D00FA67619D45CB60000004A /* CoreLocation.framework in Frameworks */,
+				D00FA67419D45C920000004A /* MAMapKit.framework in Frameworks */,
 				D00FA5FA19D4442B0000004A /* CoreGraphics.framework in Frameworks */,
 				D00FA5FC19D4442B0000004A /* UIKit.framework in Frameworks */,
 				D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */,
@@ -113,6 +142,7 @@
 		D00FA5EB19D4442B0000004A = {
 			isa = PBXGroup;
 			children = (
+				D00FA68519D45D3A0000004A /* AMap.bundle */,
 				D00FA5FD19D4442B0000004A /* JoyfulSports */,
 				D00FA61619D4442C0000004A /* JoyfulSportsTests */,
 				D00FA5F619D4442B0000004A /* Frameworks */,
@@ -132,6 +162,15 @@
 		D00FA5F619D4442B0000004A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D00FA68319D45D1C0000004A /* Security.framework */,
+				D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */,
+				D00FA67F19D45CFF0000004A /* OpenGLES.framework */,
+				D00FA67D19D45CE70000004A /* libz.dylib */,
+				D00FA67B19D45CDC0000004A /* CoreTelephony.framework */,
+				D00FA67919D45CD00000004A /* SystemConfiguration.framework */,
+				D00FA67719D45CC20000004A /* QuartzCore.framework */,
+				D00FA67519D45CB60000004A /* CoreLocation.framework */,
+				D00FA67319D45C920000004A /* MAMapKit.framework */,
 				D00FA5F719D4442B0000004A /* Foundation.framework */,
 				D00FA5F919D4442B0000004A /* CoreGraphics.framework */,
 				D00FA5FB19D4442B0000004A /* UIKit.framework */,
@@ -496,6 +535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00FA68619D45D3A0000004A /* AMap.bundle in Resources */,
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
@@ -646,9 +686,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/macbookair/Desktop/地图/AMap_iOS_API_V2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -659,9 +704,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/macbookair/Desktop/地图/AMap_iOS_API_V2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
