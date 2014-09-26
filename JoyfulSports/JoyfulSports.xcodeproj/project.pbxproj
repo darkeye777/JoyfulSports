@@ -31,7 +31,6 @@
 		D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66B19D458840000004A /* UIBarButtonItem+TZ.m */; };
 		D00FA67119D458840000004A /* UIImage+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66D19D458840000004A /* UIImage+TZ.m */; };
 		D00FA67219D458840000004A /* UIView+TZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA66F19D458840000004A /* UIView+TZ.m */; };
-		D00FA67419D45C920000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67319D45C920000004A /* MAMapKit.framework */; };
 		D00FA67619D45CB60000004A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67519D45CB60000004A /* CoreLocation.framework */; };
 		D00FA67819D45CC20000004A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67719D45CC20000004A /* QuartzCore.framework */; };
 		D00FA67A19D45CD00000004A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA67919D45CD00000004A /* SystemConfiguration.framework */; };
@@ -41,6 +40,7 @@
 		D00FA68219D45D110000004A /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */; };
 		D00FA68419D45D1C0000004A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA68319D45D1C0000004A /* Security.framework */; };
 		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
+		D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA6E219D52AFB0000004A /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +104,7 @@
 		D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		D00FA68319D45D1C0000004A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D00FA68519D45D3A0000004A /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		D00FA6E219D52AFB0000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +118,9 @@
 				D00FA67E19D45CE70000004A /* libz.dylib in Frameworks */,
 				D00FA67C19D45CDC0000004A /* CoreTelephony.framework in Frameworks */,
 				D00FA67A19D45CD00000004A /* SystemConfiguration.framework in Frameworks */,
+				D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */,
 				D00FA67819D45CC20000004A /* QuartzCore.framework in Frameworks */,
 				D00FA67619D45CB60000004A /* CoreLocation.framework in Frameworks */,
-				D00FA67419D45C920000004A /* MAMapKit.framework in Frameworks */,
 				D00FA5FA19D4442B0000004A /* CoreGraphics.framework in Frameworks */,
 				D00FA5FC19D4442B0000004A /* UIKit.framework in Frameworks */,
 				D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */,
@@ -162,6 +163,7 @@
 		D00FA5F619D4442B0000004A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D00FA6E219D52AFB0000004A /* MAMapKit.framework */,
 				D00FA68319D45D1C0000004A /* Security.framework */,
 				D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */,
 				D00FA67F19D45CFF0000004A /* OpenGLES.framework */,
@@ -689,6 +691,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/macbookair/Desktop/地图/AMap_iOS_API_V2",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
@@ -707,6 +710,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/macbookair/Desktop/地图/AMap_iOS_API_V2",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
@@ -776,6 +780,7 @@
 				D00FA62219D4442C0000004A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00FA62319D4442C0000004A /* Build configuration list for PBXNativeTarget "JoyfulSportsTests" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +789,7 @@
 				D00FA62519D4442C0000004A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

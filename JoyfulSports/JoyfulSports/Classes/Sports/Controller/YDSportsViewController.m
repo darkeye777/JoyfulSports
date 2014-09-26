@@ -112,7 +112,6 @@
         
         //总路程
         self.totalDistance += distance;
-        NSLog(@"距离: %f 米", self.totalDistance);
     }
     
     [self.points addObject:location];
@@ -139,10 +138,10 @@
     return overlayView;
 }
 
-- (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated
-{
-    YDLog(@"( %f, %f )", mapView.region.span.latitudeDelta, mapView.region.span.longitudeDelta);
-}
+//- (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+//{
+//    YDLog(@"( %f, %f )", mapView.region.span.latitudeDelta, mapView.region.span.longitudeDelta);
+//}
 
 /**
  *  绘制
