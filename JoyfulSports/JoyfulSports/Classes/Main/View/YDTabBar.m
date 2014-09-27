@@ -61,6 +61,10 @@
 
         UIButton *btn = self.tabBarButtons[i];
         
+//        if (i >= count / 2) {
+//            btnX = (i + 1) * btnW;
+//        }
+        
         //设置tag
         btn.tag = i;
 
@@ -72,6 +76,7 @@
 #pragma mark - 设置tabBar按钮
 - (void)addTabBarButton:(UITabBarItem *)item
 {
+
     if ([item.title isEqualToString:@"运动"]) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button"] forState:UIControlStateNormal];
@@ -94,6 +99,10 @@
         [self addSubview:btn];
         
         [self.tabBarButtons addObject:btn];
+        
+//        if (self.subviews.count == 1) {
+//            [self btnClick:btn];
+//        }
     }
 }
 

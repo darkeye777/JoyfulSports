@@ -14,9 +14,12 @@
 #import "YDMoreViewController.h"
 #import "YDNavigationViewController.h"
 #import "YDTabBar.h"
+#import "DCPathButton.h"
 
-@interface YDTabBarViewController () <YDTabBarDelegate>
+@interface YDTabBarViewController () <YDTabBarDelegate, DCPathButtonDelegate>
 @property (nonatomic, weak) YDTabBar *customTabBar;
+
+@property (nonatomic, strong) YDSportsViewController *sportsVC;
 @end
 
 @implementation YDTabBarViewController
@@ -34,14 +37,17 @@
         
         YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
         [self setupChildViewController:sportsVC title:@"运动" imageName:@"tabbar_compose_button" selImageName:@"tabbar_compose_button_highlighted"];
-        sportsVC.view.backgroundColor = [UIColor grayColor];
+        self.sportsVC = sportsVC;
+//        sportsVC.view.backgroundColor = [UIColor grayColor];
         
-        
+
         YDPlanViewController *planVC = [[YDPlanViewController alloc] init];
         [self setupChildViewController:planVC title:@"计划" imageName:@"tabbar_discover" selImageName:@"tabbar_discover_selected"];
         
         YDMoreViewController *moreVC = [[YDMoreViewController alloc] init];
         [self setupChildViewController:moreVC title:@"更多" imageName:@"tabbar_profile" selImageName:@"tabbar_profile_selected"];
+        
+//        [self configureDCPathButton];
     }
     return self;
 }
@@ -51,17 +57,34 @@
     [super viewDidLoad];
     
     //自定义tabBar
+
+    [self setupCustomTabBar];
+    
+}
+
+/**
+ * 创建自定义tabBar
+ */
+- (void)setupCustomTabBar
+{
     YDTabBar *customTabBar = [[YDTabBar alloc] init];
-    customTabBar.frame = self.tabBar.frame;
-    
-    //设置代理
-    customTabBar.delegate = self;
-    
+    customTabBar.frame = self.tabBar.bounds;
+    [self.tabBar addSubview:customTabBar];
     self.customTabBar = customTabBar;
-    [self.view addSubview:customTabBar];
-    
-    [self.tabBar removeFromSuperview];
-    
+    // 设置代理
+    self.customTabBar.delegate = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // 遍历tabbar中所有的子控件, 删除不需要的控件
+    // UITabBarButton 这个类是私有API,
+    for (UIView *subView in self.tabBar.subviews) {
+        if ([subView isKindOfClass:[UIControl class]]) {
+            [subView removeFromSuperview];
+        }
+    }
 }
 
 /**
@@ -91,5 +114,68 @@
 {
     self.selectedIndex = to;
 }
+
+#pragma mark - 弹出按钮
+- (void)configureDCPathButton
+{
+    // Configure center button
+    //
+    DCPathButton *dcPathButton = [[DCPathButton alloc]initWithCenterImage:[UIImage imageNamed:@"chooser-button-tab"]
+                                                           hilightedImage:[UIImage imageNamed:@"chooser-button-tab-highlighted"]];
+    dcPathButton.delegate = self;
+    
+    // Configure item buttons
+    //
+    DCPathItemButton *itemButton_1 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-music"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-music-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    
+    DCPathItemButton *itemButton_2 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-place"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-place-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    
+    DCPathItemButton *itemButton_3 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-camera"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-camera-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    
+    DCPathItemButton *itemButton_4 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-thought"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-thought-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    
+    DCPathItemButton *itemButton_5 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    
+    // Add the item button into the center button
+    //
+    [dcPathButton addPathItems:@[itemButton_1, itemButton_2, itemButton_3, itemButton_4, itemButton_5]];
+    
+    [self.view addSubview:dcPathButton];
+    
+}
+
+#pragma mark - DCPathButton Delegate
+
+- (void)itemButtonTappedAtIndex:(NSUInteger)index
+{
+    NSLog(@"You tap at index : %ld", (unsigned long)index);
+    YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
+    [self presentViewController:sportsVC animated:YES completion:nil];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+//-(UIStatusBarStyle)preferredStatusBarStyle{
+//    return UIStatusBarStyleLightContent;
+//}
 
 @end

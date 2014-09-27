@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MAMapKit/MAMapKit.h>
 
-@interface YDSportsViewController : UIViewController <MAMapViewDelegate>
+@interface YDSportsViewController : UIViewController 
 
 @end

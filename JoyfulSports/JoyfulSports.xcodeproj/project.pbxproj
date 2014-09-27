@@ -41,6 +41,23 @@
 		D00FA68419D45D1C0000004A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA68319D45D1C0000004A /* Security.framework */; };
 		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
 		D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA6E219D52AFB0000004A /* MAMapKit.framework */; };
+		D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */ = {isa = PBXBuildFile; fileRef = D01D148E19D65DB2007E7FD0 /* YDSport.m */; };
+		D066CC2D19D5762F004704E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2419D5762E004704E5 /* DCPathButton.m */; };
+		D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2619D5762E004704E5 /* DCPathCenterButton.m */; };
+		D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2819D5762E004704E5 /* DCPathItemButton.m */; };
+		D066CC3019D5762F004704E5 /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = D066CC2A19D5762E004704E5 /* bloom.caf */; };
+		D066CC3119D5762F004704E5 /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = D066CC2B19D5762E004704E5 /* fold.caf */; };
+		D066CC3219D5762F004704E5 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = D066CC2C19D5762E004704E5 /* selected.caf */; };
+		D066CC3419D5763F004704E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D066CC3319D5763F004704E5 /* AudioToolbox.framework */; };
+		D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0219D690D500A5EF05 /* YDMessageView.m */; };
+		D074EE0819D6A2A500A5EF05 /* YDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */; };
+		D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540119D64FBD0007F461 /* FMDatabase.m */; };
+		D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540319D64FBD0007F461 /* FMDatabaseAdditions.m */; };
+		D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540519D64FBD0007F461 /* FMDatabasePool.m */; };
+		D0EB540E19D64FBD0007F461 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540719D64FBD0007F461 /* FMDatabaseQueue.m */; };
+		D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540A19D64FBD0007F461 /* FMResultSet.m */; };
+		D0EB541119D64FE40007F461 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EB541019D64FE30007F461 /* libsqlite3.0.dylib */; };
+		D0EB541619D650580007F461 /* YDSportsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB541519D650580007F461 /* YDSportsTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D00FA5F419D4442B0000004A /* JoyfulSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyfulSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00FA5F419D4442B0000004A /* 悦动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "悦动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00FA5F719D4442B0000004A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D00FA5F919D4442B0000004A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D00FA5FB19D4442B0000004A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -103,8 +120,38 @@
 		D00FA67F19D45CFF0000004A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		D00FA68319D45D1C0000004A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D00FA68519D45D3A0000004A /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		D00FA68519D45D3A0000004A /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = ../AMap.bundle; sourceTree = "<group>"; };
 		D00FA6E219D52AFB0000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		D01D148D19D65DB2007E7FD0 /* YDSport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSport.h; sourceTree = "<group>"; };
+		D01D148E19D65DB2007E7FD0 /* YDSport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSport.m; sourceTree = "<group>"; };
+		D066CC2319D5762E004704E5 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
+		D066CC2419D5762E004704E5 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
+		D066CC2519D5762E004704E5 /* DCPathCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathCenterButton.h; sourceTree = "<group>"; };
+		D066CC2619D5762E004704E5 /* DCPathCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathCenterButton.m; sourceTree = "<group>"; };
+		D066CC2719D5762E004704E5 /* DCPathItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathItemButton.h; sourceTree = "<group>"; };
+		D066CC2819D5762E004704E5 /* DCPathItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathItemButton.m; sourceTree = "<group>"; };
+		D066CC2A19D5762E004704E5 /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
+		D066CC2B19D5762E004704E5 /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
+		D066CC2C19D5762E004704E5 /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		D066CC3319D5763F004704E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D074EE0119D690D500A5EF05 /* YDMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMessageView.h; sourceTree = "<group>"; };
+		D074EE0219D690D500A5EF05 /* YDMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageView.m; sourceTree = "<group>"; };
+		D074EE0619D6A2A500A5EF05 /* YDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTestViewController.h; sourceTree = "<group>"; };
+		D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTestViewController.m; sourceTree = "<group>"; };
+		D0EB540019D64FBD0007F461 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D0EB540119D64FBD0007F461 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D0EB540219D64FBD0007F461 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D0EB540319D64FBD0007F461 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D0EB540419D64FBD0007F461 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D0EB540519D64FBD0007F461 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D0EB540619D64FBD0007F461 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D0EB540719D64FBD0007F461 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D0EB540819D64FBD0007F461 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		D0EB540919D64FBD0007F461 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D0EB540A19D64FBD0007F461 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D0EB541019D64FE30007F461 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D0EB541419D650580007F461 /* YDSportsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsTool.h; sourceTree = "<group>"; };
+		D0EB541519D650580007F461 /* YDSportsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB541119D64FE40007F461 /* libsqlite3.0.dylib in Frameworks */,
+				D066CC3419D5763F004704E5 /* AudioToolbox.framework in Frameworks */,
 				D00FA68419D45D1C0000004A /* Security.framework in Frameworks */,
 				D00FA68219D45D110000004A /* libstdc++.6.0.9.dylib in Frameworks */,
 				D00FA68019D45CFF0000004A /* OpenGLES.framework in Frameworks */,
@@ -143,7 +192,6 @@
 		D00FA5EB19D4442B0000004A = {
 			isa = PBXGroup;
 			children = (
-				D00FA68519D45D3A0000004A /* AMap.bundle */,
 				D00FA5FD19D4442B0000004A /* JoyfulSports */,
 				D00FA61619D4442C0000004A /* JoyfulSportsTests */,
 				D00FA5F619D4442B0000004A /* Frameworks */,
@@ -154,7 +202,7 @@
 		D00FA5F519D4442B0000004A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D00FA5F419D4442B0000004A /* JoyfulSports.app */,
+				D00FA5F419D4442B0000004A /* 悦动.app */,
 				D00FA60F19D4442B0000004A /* JoyfulSportsTests.xctest */,
 			);
 			name = Products;
@@ -163,6 +211,8 @@
 		D00FA5F619D4442B0000004A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0EB541019D64FE30007F461 /* libsqlite3.0.dylib */,
+				D066CC3319D5763F004704E5 /* AudioToolbox.framework */,
 				D00FA6E219D52AFB0000004A /* MAMapKit.framework */,
 				D00FA68319D45D1C0000004A /* Security.framework */,
 				D00FA68119D45D110000004A /* libstdc++.6.0.9.dylib */,
@@ -193,6 +243,7 @@
 		D00FA5FE19D4442B0000004A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D00FA68519D45D3A0000004A /* AMap.bundle */,
 				D00FA60919D4442B0000004A /* Images.xcassets */,
 				D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */,
 				D00FA60019D4442B0000004A /* InfoPlist.strings */,
@@ -222,6 +273,8 @@
 		D00FA62619D445710000004A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D0EB541219D650160007F461 /* Tools */,
+				D066CC2019D5760B004704E5 /* Lib */,
 				D00FA63119D447410000004A /* Course */,
 				D00FA63519D447410000004A /* More */,
 				D00FA63919D447410000004A /* Plan */,
@@ -430,6 +483,8 @@
 			children = (
 				D00FA65119D447CB0000004A /* YDSportsViewController.h */,
 				D00FA65219D447CB0000004A /* YDSportsViewController.m */,
+				D074EE0619D6A2A500A5EF05 /* YDTestViewController.h */,
+				D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -437,6 +492,8 @@
 		D00FA64319D447410000004A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D01D148D19D65DB2007E7FD0 /* YDSport.h */,
+				D01D148E19D65DB2007E7FD0 /* YDSport.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,6 +501,8 @@
 		D00FA64419D447410000004A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D074EE0119D690D500A5EF05 /* YDMessageView.h */,
+				D074EE0219D690D500A5EF05 /* YDMessageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +518,82 @@
 				D00FA66F19D458840000004A /* UIView+TZ.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		D066CC2019D5760B004704E5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB53FF19D64FBD0007F461 /* fmdb */,
+				D066CC2119D5762E004704E5 /* DCPathButton */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D066CC2119D5762E004704E5 /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				D066CC2219D5762E004704E5 /* Classes */,
+				D066CC2919D5762E004704E5 /* Sounds */,
+			);
+			path = DCPathButton;
+			sourceTree = "<group>";
+		};
+		D066CC2219D5762E004704E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D066CC2319D5762E004704E5 /* DCPathButton.h */,
+				D066CC2419D5762E004704E5 /* DCPathButton.m */,
+				D066CC2519D5762E004704E5 /* DCPathCenterButton.h */,
+				D066CC2619D5762E004704E5 /* DCPathCenterButton.m */,
+				D066CC2719D5762E004704E5 /* DCPathItemButton.h */,
+				D066CC2819D5762E004704E5 /* DCPathItemButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D066CC2919D5762E004704E5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D066CC2A19D5762E004704E5 /* bloom.caf */,
+				D066CC2B19D5762E004704E5 /* fold.caf */,
+				D066CC2C19D5762E004704E5 /* selected.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D0EB53FF19D64FBD0007F461 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB540019D64FBD0007F461 /* FMDatabase.h */,
+				D0EB540119D64FBD0007F461 /* FMDatabase.m */,
+				D0EB540219D64FBD0007F461 /* FMDatabaseAdditions.h */,
+				D0EB540319D64FBD0007F461 /* FMDatabaseAdditions.m */,
+				D0EB540419D64FBD0007F461 /* FMDatabasePool.h */,
+				D0EB540519D64FBD0007F461 /* FMDatabasePool.m */,
+				D0EB540619D64FBD0007F461 /* FMDatabaseQueue.h */,
+				D0EB540719D64FBD0007F461 /* FMDatabaseQueue.m */,
+				D0EB540819D64FBD0007F461 /* FMDB.h */,
+				D0EB540919D64FBD0007F461 /* FMResultSet.h */,
+				D0EB540A19D64FBD0007F461 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		D0EB541219D650160007F461 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB541319D650160007F461 /* DBTools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D0EB541319D650160007F461 /* DBTools */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB541419D650580007F461 /* YDSportsTool.h */,
+				D0EB541519D650580007F461 /* YDSportsTool.m */,
+			);
+			path = DBTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,7 +613,7 @@
 			);
 			name = JoyfulSports;
 			productName = JoyfulSports;
-			productReference = D00FA5F419D4442B0000004A /* JoyfulSports.app */;
+			productReference = D00FA5F419D4442B0000004A /* 悦动.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D00FA60E19D4442B0000004A /* JoyfulSportsTests */ = {
@@ -538,7 +673,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FA68619D45D3A0000004A /* AMap.bundle in Resources */,
+				D066CC3219D5762F004704E5 /* selected.caf in Resources */,
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
+				D066CC3019D5762F004704E5 /* bloom.caf in Resources */,
+				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,18 +696,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */,
 				D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */,
 				D00FA67119D458840000004A /* UIImage+TZ.m in Sources */,
+				D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */,
 				D00FA67219D458840000004A /* UIView+TZ.m in Sources */,
+				D066CC2D19D5762F004704E5 /* DCPathButton.m in Sources */,
 				D00FA65F19D449370000004A /* YDTabBarButton.m in Sources */,
 				D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */,
+				D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */,
 				D00FA62C19D445710000004A /* main.m in Sources */,
 				D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */,
 				D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */,
 				D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */,
 				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,
 				D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */,
+				D074EE0819D6A2A500A5EF05 /* YDTestViewController.m in Sources */,
 				D00FA64719D447870000004A /* YDCourseViewController.m in Sources */,
+				D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */,
+				D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */,
+				D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */,
+				D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */,
+				D0EB540E19D64FBD0007F461 /* FMDatabaseQueue.m in Sources */,
+				D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */,
+				D0EB541619D650580007F461 /* YDSportsTool.m in Sources */,
 				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
 				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
 			);
@@ -686,6 +836,7 @@
 		D00FA62119D4442C0000004A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -696,8 +847,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "悦动";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -705,6 +857,7 @@
 		D00FA62219D4442C0000004A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -715,6 +868,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
