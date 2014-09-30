@@ -11,8 +11,15 @@
 #import "YDSport.h"
 #import "YDMessageView.h"
 #import "YDTestViewController.h"
+#import "YDTopMessageView.h"
 
-@interface YDSportsViewController () <MAMapViewDelegate, YDMessageViewDelegate>
+@interface YDSportsViewController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
+//{
+//     CLLocationManager *_locationManager;
+//}
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+
 /**
  *  地图
  */
@@ -49,6 +56,10 @@
  *  信息显示View
  */
 @property (nonatomic, weak) YDMessageView *messageView;
+/**
+ *  提示
+ */
+@property (nonatomic, weak) YDTopMessageView *topMsgView;
 @end
 
 @implementation YDSportsViewController
@@ -67,14 +78,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     //信息显示
     YDMessageView *messageView = [[YDMessageView alloc] init];
     CGFloat height = self.view.height - 64 - 49;
     CGFloat msgViewW = self.view.width;
     CGFloat msgViewH = height * 0.35;
     CGFloat msgViewX = 0;
-    CGFloat msgViewY = self.view.height - msgViewH;
+    CGFloat msgViewY = self.view.height - 49 - msgViewH;
     messageView.frame = CGRectMake(msgViewX, msgViewY, msgViewW, msgViewH);
     //代理
     messageView.delegate = self;
@@ -82,14 +92,29 @@
     self.messageView = messageView;
     [self.view addSubview:messageView];
     
+    if (iOS8) {
+        YDMapLocationiOS8
+    }
+
+//    _locationManager =[[CLLocationManager alloc] init];
+////    [_locationManager requestAlwaysAuthorization];//用这个方法，plist中需要NSLocationAlwaysUsageDescription
+//    [_locationManager requestWhenInUseAuthorization];//用这个方法，plist里要加字段NSLocationWhenInUseUsageDescription
+
     //地图显示
-    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, height - msgViewH - 20)];
+    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, height - msgViewH)];
     self.mapView.delegate = self;
     [self.view addSubview:self.mapView];
+    
     self.mapView.showsUserLocation = YES;
     self.mapView.showsScale = NO;
     [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
-
+    
+    //提示显示
+    YDTopMessageView *topMsgView  = [[YDTopMessageView alloc] init];
+    topMsgView.frame = CGRectMake(10, 75, 250, 35);
+    self.topMsgView = topMsgView;
+    [self.view addSubview:topMsgView];
+    
 }
 
 #pragma mark - MAMapViewDelegate
@@ -121,6 +146,11 @@
         anno.title = @"起点";
         [self.mapView addAnnotation:anno];
     }
+    
+    YDSport *sport = [[YDSport alloc] init];
+    sport.sportTime = [self.messageView currentTime];
+    sport.distance = [NSString stringWithFormat:@"%f", self.totalDistance];
+    self.topMsgView.sport = sport;
 }
 
 - (MAOverlayView *)mapView:(MAMapView *)mapView viewForOverlay:(id<MAOverlay>)overlay
@@ -131,8 +161,8 @@
         self.routeLineView = [[MAPolylineView alloc] initWithPolyline:self.routeLine];
         self.routeLineView.strokeColor = [UIColor redColor];
         self.routeLineView.lineWidth = 3;
-        self.routeLineView.lineCapType = kCGLineCapRound;
-        self.routeLineView.lineJoinType = kCGLineJoinRound;
+        self.routeLineView.lineCapType = kMALineCapRound;
+        self.routeLineView.lineJoinType = kMALineJoinRound;
         overlayView = self.routeLineView;
     }
     
@@ -172,13 +202,13 @@
         anno.title = @"终点";
         [self.mapView addAnnotation:anno];
     }
-    [UIView animateWithDuration:0.5 animations:^{
-        self.mapView.height = self.view.height;
-        self.mapView.y = 20;
-    }];
-    
-    self.tabBarController.tabBar.hidden = YES;
-    self.navigationController.navigationBar.hidden = YES;
+//    [UIView animateWithDuration:0.5 animations:^{
+//        self.mapView.height = self.view.height;
+//        self.mapView.y = 20;
+//    }];
+//
+//    self.tabBarController.tabBar.hidden = YES;
+//    self.navigationController.navigationBar.hidden = YES;
 }
 
 #pragma mark - 方法
@@ -198,6 +228,8 @@
     self.routeLine = [MAPolyline polylineWithCoordinates:coordinates count:self.points.count];
     
     if (nil != self.routeLine) {
+//        [self.mapView clearsContextBeforeDrawing];
+//        [self.mapView removeOverlays:self.routeLineArray];
         [self.routeLineArray addObject:self.routeLine];
         [self.mapView addOverlay:self.routeLine];
     }

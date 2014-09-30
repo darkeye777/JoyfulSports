@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, copy) NSString *distance;
 @property (nonatomic, copy) NSString *time;
-@property (nonatomic, strong) NSData *points;
+@property (nonatomic, strong) NSArray *points;
+@property (nonatomic, assign) long sportTime;
 
 @end

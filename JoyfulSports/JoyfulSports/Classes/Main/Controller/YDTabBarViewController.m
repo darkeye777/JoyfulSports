@@ -19,7 +19,6 @@
 @interface YDTabBarViewController () <YDTabBarDelegate, DCPathButtonDelegate>
 @property (nonatomic, weak) YDTabBar *customTabBar;
 
-@property (nonatomic, strong) YDSportsViewController *sportsVC;
 @end
 
 @implementation YDTabBarViewController
@@ -35,11 +34,8 @@
         YDCourseViewController *courseVC = [[YDCourseViewController alloc] init];
         [self setupChildViewController:courseVC title:@"教程" imageName:@"tabbar_message_center" selImageName:@"tabbar_message_center_selected"];
         
-        YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
-        [self setupChildViewController:sportsVC title:@"运动" imageName:@"tabbar_compose_button" selImageName:@"tabbar_compose_button_highlighted"];
-        self.sportsVC = sportsVC;
-//        sportsVC.view.backgroundColor = [UIColor grayColor];
-        
+//        YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
+//        [self setupChildViewController:sportsVC title:@"运动" imageName:@"tabbar_compose_button" selImageName:@"tabbar_compose_button_highlighted"];
 
         YDPlanViewController *planVC = [[YDPlanViewController alloc] init];
         [self setupChildViewController:planVC title:@"计划" imageName:@"tabbar_discover" selImageName:@"tabbar_discover_selected"];
@@ -47,7 +43,7 @@
         YDMoreViewController *moreVC = [[YDMoreViewController alloc] init];
         [self setupChildViewController:moreVC title:@"更多" imageName:@"tabbar_profile" selImageName:@"tabbar_profile_selected"];
         
-//        [self configureDCPathButton];
+        [self configureDCPathButton];
     }
     return self;
 }

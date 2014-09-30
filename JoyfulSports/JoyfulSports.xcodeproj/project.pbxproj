@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0042BF819D78C0900E35483 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0042BF719D78C0900E35483 /* main.storyboard */; };
+		D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFA19D78C5600E35483 /* YDLoginViewController.m */; };
+		D0042BFE19D792B400E35483 /* YDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFD19D792B400E35483 /* YDUser.m */; };
 		D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F719D4442B0000004A /* Foundation.framework */; };
 		D00FA5FA19D4442B0000004A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F919D4442B0000004A /* CoreGraphics.framework */; };
 		D00FA5FC19D4442B0000004A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5FB19D4442B0000004A /* UIKit.framework */; };
@@ -42,6 +45,7 @@
 		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
 		D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA6E219D52AFB0000004A /* MAMapKit.framework */; };
 		D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */ = {isa = PBXBuildFile; fileRef = D01D148E19D65DB2007E7FD0 /* YDSport.m */; };
+		D061D5EB19DA1A06003F1BD4 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D061D5EA19DA1A06003F1BD4 /* Test.storyboard */; };
 		D066CC2D19D5762F004704E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2419D5762E004704E5 /* DCPathButton.m */; };
 		D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2619D5762E004704E5 /* DCPathCenterButton.m */; };
 		D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2819D5762E004704E5 /* DCPathItemButton.m */; };
@@ -58,6 +62,9 @@
 		D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540A19D64FBD0007F461 /* FMResultSet.m */; };
 		D0EB541119D64FE40007F461 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EB541019D64FE30007F461 /* libsqlite3.0.dylib */; };
 		D0EB541619D650580007F461 /* YDSportsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB541519D650580007F461 /* YDSportsTool.m */; };
+		D0EF43AA19D6EC100069851C /* YDTopMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF43A919D6EC100069851C /* YDTopMessageView.m */; };
+		D0EF43B219D6F6A40069851C /* TTCounterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF43AE19D6F6A40069851C /* TTCounterLabel.m */; };
+		D0EF43B319D6F6A40069851C /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF43B119D6F6A40069851C /* TTTAttributedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0042BF719D78C0900E35483 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		D0042BF919D78C5600E35483 /* YDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLoginViewController.h; sourceTree = "<group>"; };
+		D0042BFA19D78C5600E35483 /* YDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLoginViewController.m; sourceTree = "<group>"; };
+		D0042BFC19D792B400E35483 /* YDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUser.h; sourceTree = "<group>"; };
+		D0042BFD19D792B400E35483 /* YDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUser.m; sourceTree = "<group>"; };
 		D00FA5F419D4442B0000004A /* 悦动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "悦动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00FA5F719D4442B0000004A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D00FA5F919D4442B0000004A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +136,7 @@
 		D00FA6E219D52AFB0000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		D01D148D19D65DB2007E7FD0 /* YDSport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSport.h; sourceTree = "<group>"; };
 		D01D148E19D65DB2007E7FD0 /* YDSport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSport.m; sourceTree = "<group>"; };
+		D061D5EA19DA1A06003F1BD4 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		D066CC2319D5762E004704E5 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
 		D066CC2419D5762E004704E5 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
 		D066CC2519D5762E004704E5 /* DCPathCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathCenterButton.h; sourceTree = "<group>"; };
@@ -152,6 +165,12 @@
 		D0EB541019D64FE30007F461 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D0EB541419D650580007F461 /* YDSportsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsTool.h; sourceTree = "<group>"; };
 		D0EB541519D650580007F461 /* YDSportsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsTool.m; sourceTree = "<group>"; };
+		D0EF43A819D6EC100069851C /* YDTopMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTopMessageView.h; sourceTree = "<group>"; };
+		D0EF43A919D6EC100069851C /* YDTopMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTopMessageView.m; sourceTree = "<group>"; };
+		D0EF43AD19D6F6A40069851C /* TTCounterLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCounterLabel.h; sourceTree = "<group>"; };
+		D0EF43AE19D6F6A40069851C /* TTCounterLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCounterLabel.m; sourceTree = "<group>"; };
+		D0EF43B019D6F6A40069851C /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		D0EF43B119D6F6A40069851C /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,11 +262,13 @@
 		D00FA5FE19D4442B0000004A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0042BF719D78C0900E35483 /* main.storyboard */,
 				D00FA68519D45D3A0000004A /* AMap.bundle */,
 				D00FA60919D4442B0000004A /* Images.xcassets */,
 				D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */,
 				D00FA60019D4442B0000004A /* InfoPlist.strings */,
 				D00FA60519D4442B0000004A /* JoyfulSports-Prefix.pch */,
+				D061D5EA19DA1A06003F1BD4 /* Test.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -314,6 +335,8 @@
 				D00FA65519D4481C0000004A /* YDTabBarViewController.m */,
 				D00FA65719D4482F0000004A /* YDNavigationViewController.h */,
 				D00FA65819D4482F0000004A /* YDNavigationViewController.m */,
+				D0042BF919D78C5600E35483 /* YDLoginViewController.h */,
+				D0042BFA19D78C5600E35483 /* YDLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +344,8 @@
 		D00FA62F19D4465A0000004A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0042BFC19D792B400E35483 /* YDUser.h */,
+				D0042BFD19D792B400E35483 /* YDUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,6 +528,8 @@
 			children = (
 				D074EE0119D690D500A5EF05 /* YDMessageView.h */,
 				D074EE0219D690D500A5EF05 /* YDMessageView.m */,
+				D0EF43A819D6EC100069851C /* YDTopMessageView.h */,
+				D0EF43A919D6EC100069851C /* YDTopMessageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -582,6 +609,7 @@
 		D0EB541219D650160007F461 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D0EF43AB19D6F6A40069851C /* TimeLabel */,
 				D0EB541319D650160007F461 /* DBTools */,
 			);
 			path = Tools;
@@ -594,6 +622,33 @@
 				D0EB541519D650580007F461 /* YDSportsTool.m */,
 			);
 			path = DBTools;
+			sourceTree = "<group>";
+		};
+		D0EF43AB19D6F6A40069851C /* TimeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF43AC19D6F6A40069851C /* TTCounterLabel */,
+				D0EF43AF19D6F6A40069851C /* TTTAttributedLabel */,
+			);
+			path = TimeLabel;
+			sourceTree = "<group>";
+		};
+		D0EF43AC19D6F6A40069851C /* TTCounterLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF43AD19D6F6A40069851C /* TTCounterLabel.h */,
+				D0EF43AE19D6F6A40069851C /* TTCounterLabel.m */,
+			);
+			path = TTCounterLabel;
+			sourceTree = "<group>";
+		};
+		D0EF43AF19D6F6A40069851C /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF43B019D6F6A40069851C /* TTTAttributedLabel.h */,
+				D0EF43B119D6F6A40069851C /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -673,10 +728,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FA68619D45D3A0000004A /* AMap.bundle in Resources */,
+				D0042BF819D78C0900E35483 /* main.storyboard in Resources */,
 				D066CC3219D5762F004704E5 /* selected.caf in Resources */,
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
 				D066CC3019D5762F004704E5 /* bloom.caf in Resources */,
 				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
+				D061D5EB19DA1A06003F1BD4 /* Test.storyboard in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +755,8 @@
 			files = (
 				D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */,
 				D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */,
+				D0EF43AA19D6EC100069851C /* YDTopMessageView.m in Sources */,
+				D0EF43B219D6F6A40069851C /* TTCounterLabel.m in Sources */,
 				D00FA67119D458840000004A /* UIImage+TZ.m in Sources */,
 				D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */,
 				D00FA67219D458840000004A /* UIView+TZ.m in Sources */,
@@ -711,6 +770,7 @@
 				D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */,
 				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,
 				D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */,
+				D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */,
 				D074EE0819D6A2A500A5EF05 /* YDTestViewController.m in Sources */,
 				D00FA64719D447870000004A /* YDCourseViewController.m in Sources */,
 				D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */,
@@ -718,8 +778,10 @@
 				D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */,
 				D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */,
 				D0EB540E19D64FBD0007F461 /* FMDatabaseQueue.m in Sources */,
+				D0EF43B319D6F6A40069851C /* TTTAttributedLabel.m in Sources */,
 				D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */,
 				D0EB541619D650580007F461 /* YDSportsTool.m in Sources */,
+				D0042BFE19D792B400E35483 /* YDUser.m in Sources */,
 				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
 				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
 			);
@@ -797,7 +859,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
@@ -828,7 +890,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -847,7 +909,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "悦动";
 				WRAPPER_EXTENSION = app;
@@ -868,7 +930,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyfulSports/JoyfulSports-Prefix.pch";
 				INFOPLIST_FILE = "JoyfulSports/JoyfulSports-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

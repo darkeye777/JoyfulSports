@@ -20,12 +20,21 @@
 
 //是否为iOS7以上
 #define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+//iOS8
+#define iOS8 ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0)
 
 //自定义log
 #ifdef DEBUG
 #define YDLog(...) NSLog(__VA_ARGS__)
 #else
 #define YDLog(...)
+#endif
+
+#ifdef __IPHONE_8_0
+#define YDMapLocationiOS8 _locationManager =[[CLLocationManager alloc] init];\
+                            [_locationManager requestWhenInUseAuthorization];
+#else
+#define YDMapLocationiOS8
 #endif
 
 #endif

@@ -15,8 +15,11 @@
 
 @end
 
+
 @interface YDMessageView : UIView
+
 
 @property (nonatomic, weak) id<YDMessageViewDelegate> delegate;
 
+- (long)currentTime;
 @end
