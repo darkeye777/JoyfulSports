@@ -14,8 +14,6 @@
 {
     CLLocationManager *_locationManager;
 }
-
-
 @end
 
 @implementation YDAppDelegate
@@ -23,7 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    
     application.statusBarHidden = NO;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -33,7 +30,6 @@
     if (username != nil) {
         YDTabBarViewController *tabBarVC = [[YDTabBarViewController alloc] init];
         self.window.rootViewController = tabBarVC;
-
     } else {
         UIStoryboard *stroy = [UIStoryboard storyboardWithName:@"main" bundle:nil];
         UIViewController *vc = [stroy instantiateInitialViewController];
@@ -42,20 +38,7 @@
     
     //地图apiKey
     [MAMapServices sharedServices].apiKey =@"e46b6db9cfa968b554ebfb3221eb4762";
-    
-    
-    
-    
-//    [UIApplication sharedApplication].idleTimerDisabled = TRUE;
-////
-//    _locationManager = [[CLLocationManager alloc] init];
-//    [_locationManager requestAlwaysAuthorization];
-//    [_locationManager startUpdatingLocation];//NSLocationAlwaysUsageDescription
-////    [_locationManager requestWhenInUseAuthorization];     //NSLocationWhenInUseDescription
-//    _locationManager.delegate = self;
-//
-    
-    
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

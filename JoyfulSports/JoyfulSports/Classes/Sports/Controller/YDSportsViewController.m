@@ -10,13 +10,9 @@
 #import "YDSportsTool.h"
 #import "YDSport.h"
 #import "YDMessageView.h"
-#import "YDTestViewController.h"
 #import "YDTopMessageView.h"
 
 @interface YDSportsViewController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
-//{
-//     CLLocationManager *_locationManager;
-//}
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
@@ -84,7 +80,7 @@
     CGFloat msgViewW = self.view.width;
     CGFloat msgViewH = height * 0.35;
     CGFloat msgViewX = 0;
-    CGFloat msgViewY = self.view.height - 49 - msgViewH;
+    CGFloat msgViewY = self.view.height - msgViewH;
     messageView.frame = CGRectMake(msgViewX, msgViewY, msgViewW, msgViewH);
     //代理
     messageView.delegate = self;
@@ -92,16 +88,15 @@
     self.messageView = messageView;
     [self.view addSubview:messageView];
     
+    //如果是iOS8,会执行一些定位方法
     if (iOS8) {
         YDMapLocationiOS8
     }
+    
 
-//    _locationManager =[[CLLocationManager alloc] init];
-////    [_locationManager requestAlwaysAuthorization];//用这个方法，plist中需要NSLocationAlwaysUsageDescription
-//    [_locationManager requestWhenInUseAuthorization];//用这个方法，plist里要加字段NSLocationWhenInUseUsageDescription
 
     //地图显示
-    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, height - msgViewH)];
+    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 20, self.view.width, self.view.height - 20 - msgViewH)];
     self.mapView.delegate = self;
     [self.view addSubview:self.mapView];
     
@@ -111,7 +106,7 @@
     
     //提示显示
     YDTopMessageView *topMsgView  = [[YDTopMessageView alloc] init];
-    topMsgView.frame = CGRectMake(10, 75, 250, 35);
+    topMsgView.frame = CGRectMake(10, 31, 250, 35);
     self.topMsgView = topMsgView;
     [self.view addSubview:topMsgView];
     
@@ -228,8 +223,6 @@
     self.routeLine = [MAPolyline polylineWithCoordinates:coordinates count:self.points.count];
     
     if (nil != self.routeLine) {
-//        [self.mapView clearsContextBeforeDrawing];
-//        [self.mapView removeOverlays:self.routeLineArray];
         [self.routeLineArray addObject:self.routeLine];
         [self.mapView addOverlay:self.routeLine];
     }

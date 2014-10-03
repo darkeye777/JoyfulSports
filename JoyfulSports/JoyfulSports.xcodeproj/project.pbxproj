@@ -45,7 +45,7 @@
 		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
 		D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA6E219D52AFB0000004A /* MAMapKit.framework */; };
 		D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */ = {isa = PBXBuildFile; fileRef = D01D148E19D65DB2007E7FD0 /* YDSport.m */; };
-		D061D5EB19DA1A06003F1BD4 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D061D5EA19DA1A06003F1BD4 /* Test.storyboard */; };
+		D061D5EB19DA1A06003F1BD4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D061D5EA19DA1A06003F1BD4 /* Login.storyboard */; };
 		D066CC2D19D5762F004704E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2419D5762E004704E5 /* DCPathButton.m */; };
 		D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2619D5762E004704E5 /* DCPathCenterButton.m */; };
 		D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2819D5762E004704E5 /* DCPathItemButton.m */; };
@@ -54,7 +54,7 @@
 		D066CC3219D5762F004704E5 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = D066CC2C19D5762E004704E5 /* selected.caf */; };
 		D066CC3419D5763F004704E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D066CC3319D5763F004704E5 /* AudioToolbox.framework */; };
 		D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0219D690D500A5EF05 /* YDMessageView.m */; };
-		D074EE0819D6A2A500A5EF05 /* YDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */; };
+		D08790FE19DA50C90061800C /* YDNoRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08790FD19DA50C90061800C /* YDNoRecordView.m */; };
 		D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540119D64FBD0007F461 /* FMDatabase.m */; };
 		D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540319D64FBD0007F461 /* FMDatabaseAdditions.m */; };
 		D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540519D64FBD0007F461 /* FMDatabasePool.m */; };
@@ -136,7 +136,7 @@
 		D00FA6E219D52AFB0000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		D01D148D19D65DB2007E7FD0 /* YDSport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSport.h; sourceTree = "<group>"; };
 		D01D148E19D65DB2007E7FD0 /* YDSport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSport.m; sourceTree = "<group>"; };
-		D061D5EA19DA1A06003F1BD4 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		D061D5EA19DA1A06003F1BD4 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D066CC2319D5762E004704E5 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
 		D066CC2419D5762E004704E5 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
 		D066CC2519D5762E004704E5 /* DCPathCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathCenterButton.h; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 		D066CC3319D5763F004704E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D074EE0119D690D500A5EF05 /* YDMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMessageView.h; sourceTree = "<group>"; };
 		D074EE0219D690D500A5EF05 /* YDMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageView.m; sourceTree = "<group>"; };
-		D074EE0619D6A2A500A5EF05 /* YDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTestViewController.h; sourceTree = "<group>"; };
-		D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTestViewController.m; sourceTree = "<group>"; };
+		D08790FC19DA50C90061800C /* YDNoRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNoRecordView.h; sourceTree = "<group>"; };
+		D08790FD19DA50C90061800C /* YDNoRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNoRecordView.m; sourceTree = "<group>"; };
 		D0EB540019D64FBD0007F461 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		D0EB540119D64FBD0007F461 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		D0EB540219D64FBD0007F461 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -268,7 +268,7 @@
 				D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */,
 				D00FA60019D4442B0000004A /* InfoPlist.strings */,
 				D00FA60519D4442B0000004A /* JoyfulSports-Prefix.pch */,
-				D061D5EA19DA1A06003F1BD4 /* Test.storyboard */,
+				D061D5EA19DA1A06003F1BD4 /* Login.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -489,6 +489,8 @@
 		D00FA64019D447410000004A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D08790FC19DA50C90061800C /* YDNoRecordView.h */,
+				D08790FD19DA50C90061800C /* YDNoRecordView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -508,8 +510,6 @@
 			children = (
 				D00FA65119D447CB0000004A /* YDSportsViewController.h */,
 				D00FA65219D447CB0000004A /* YDSportsViewController.m */,
-				D074EE0619D6A2A500A5EF05 /* YDTestViewController.h */,
-				D074EE0719D6A2A500A5EF05 /* YDTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -733,7 +733,7 @@
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
 				D066CC3019D5762F004704E5 /* bloom.caf in Resources */,
 				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
-				D061D5EB19DA1A06003F1BD4 /* Test.storyboard in Resources */,
+				D061D5EB19DA1A06003F1BD4 /* Login.storyboard in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,7 +771,6 @@
 				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,
 				D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */,
 				D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */,
-				D074EE0819D6A2A500A5EF05 /* YDTestViewController.m in Sources */,
 				D00FA64719D447870000004A /* YDCourseViewController.m in Sources */,
 				D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */,
 				D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */,
@@ -784,6 +783,7 @@
 				D0042BFE19D792B400E35483 /* YDUser.m in Sources */,
 				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
 				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
+				D08790FE19DA50C90061800C /* YDNoRecordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,7 +859,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos8.0;
 			};
 			name = Debug;
 		};
@@ -890,7 +890,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos8.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
