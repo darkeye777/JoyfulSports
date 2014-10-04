@@ -1,25 +1,31 @@
 //
-//  YDSportsViewController.m
+//  YDSportsController.m
 //  JoyfulSports
 //
-//  Created by Tzhan on 14-9-25.
+//  Created by Tzhan on 14-10-3.
 //  Copyright (c) 2014年 Banana. All rights reserved.
 //
 
-#import "YDSportsViewController.h"
+#import "YDSportsController.h"
 #import "YDSportsTool.h"
 #import "YDSport.h"
 #import "YDMessageView.h"
 #import "YDTopMessageView.h"
+#import <MAMapKit/MAMapKit.h>
 
-@interface YDSportsViewController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
-
+@interface YDSportsController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
+/**
+ *  位置管理
+ */
 @property (nonatomic, strong) CLLocationManager *locationManager;
-
 /**
  *  地图
  */
 @property (nonatomic, strong) MAMapView *mapView;
+/**
+ *  地图容器
+ */
+@property (weak, nonatomic) IBOutlet UIView *mapContainer;
 /**
  *  所有的点
  */
@@ -51,20 +57,14 @@
 /**
  *  信息显示View
  */
-@property (nonatomic, weak) YDMessageView *messageView;
+@property (nonatomic, weak) IBOutlet YDMessageView *messageView;
 /**
  *  提示
  */
-@property (nonatomic, weak) YDTopMessageView *topMsgView;
+@property (nonatomic, weak) IBOutlet YDTopMessageView *topMsgView;
 @end
 
-@implementation YDSportsViewController
-
-#pragma mark - 地图显示
-//- (void)modeAction
-//{
-//    [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES]; //地图跟着位置移动
-//}
+@implementation YDSportsController
 
 -(void)mapView:(MAMapView*)mapView didFailToLocateUserWithError:(NSError*)error
 {
@@ -75,28 +75,33 @@
 {
     [super viewDidLoad];
     //信息显示
-    YDMessageView *messageView = [[YDMessageView alloc] init];
-    CGFloat height = self.view.height - 64 - 49;
-    CGFloat msgViewW = self.view.width;
-    CGFloat msgViewH = height * 0.35;
-    CGFloat msgViewX = 0;
-    CGFloat msgViewY = self.view.height - msgViewH;
-    messageView.frame = CGRectMake(msgViewX, msgViewY, msgViewW, msgViewH);
-    //代理
-    messageView.delegate = self;
+//    YDMessageView *messageView = [[YDMessageView alloc] init];
+//    CGFloat height = self.view.height - 64 - 49;
+//    CGFloat msgViewW = self.view.width;
+//    CGFloat msgViewH = height * 0.35;
+//    CGFloat msgViewX = 0;
+//    CGFloat msgViewY = self.view.height - msgViewH;
+//    messageView.frame = CGRectMake(msgViewX, msgViewY, msgViewW, msgViewH);
+//    //代理
+//    messageView.delegate = self;
+//    
+//    self.messageView = messageView;
+//    [self.view addSubview:messageView];
     
-    self.messageView = messageView;
-    [self.view addSubview:messageView];
+    self.messageView.delegate = self;
     
-    //如果是iOS8,会执行一些定位方法
+    //如果是iOS8,会执行定位方法
     if (iOS8) {
         YDMapLocationiOS8
     }
     
+    
+    
     //地图显示
-    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 20, self.view.width, self.view.height - 20 - msgViewH)];
+    self.mapView=[[MAMapView alloc] initWithFrame:self.mapContainer.bounds];
     self.mapView.delegate = self;
-    [self.view addSubview:self.mapView];
+    [self.mapContainer addSubview:self.mapView];
+    self.mapView.delegate = self;
     
     self.mapView.showsUserLocation = YES;
     self.mapView.showsScale = NO;
@@ -180,7 +185,7 @@
             return annoView;
         }
     }
-       
+    
     //蓝色点
     return nil;
 }
@@ -195,13 +200,13 @@
         anno.title = @"终点";
         [self.mapView addAnnotation:anno];
     }
-//    [UIView animateWithDuration:0.5 animations:^{
-//        self.mapView.height = self.view.height;
-//        self.mapView.y = 20;
-//    }];
-//
-//    self.tabBarController.tabBar.hidden = YES;
-//    self.navigationController.navigationBar.hidden = YES;
+    //    [UIView animateWithDuration:0.5 animations:^{
+    //        self.mapView.height = self.view.height;
+    //        self.mapView.y = 20;
+    //    }];
+    //
+    //    self.tabBarController.tabBar.hidden = YES;
+    //    self.navigationController.navigationBar.hidden = YES;
 }
 
 #pragma mark - 方法
@@ -250,5 +255,6 @@
     }
     return _messageView;
 }
+
 
 @end

@@ -22,6 +22,10 @@
 {
 
     application.statusBarHidden = NO;
+    
+    //地图apiKey
+    [MAMapServices sharedServices].apiKey =@"e46b6db9cfa968b554ebfb3221eb4762";
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -31,14 +35,14 @@
         YDTabBarViewController *tabBarVC = [[YDTabBarViewController alloc] init];
         self.window.rootViewController = tabBarVC;
     } else {
-        UIStoryboard *stroy = [UIStoryboard storyboardWithName:@"main" bundle:nil];
-        UIViewController *vc = [stroy instantiateInitialViewController];
-        self.window.rootViewController = vc;
+        UIStoryboard *stroy = [UIStoryboard storyboardWithName:@"LoginSB" bundle:nil];
+//        UIViewController *vc = [stroy instantiateInitialViewController];
+        self.window.rootViewController = stroy.instantiateInitialViewController;
     }
     
-    //地图apiKey
-    [MAMapServices sharedServices].apiKey =@"e46b6db9cfa968b554ebfb3221eb4762";
-
+//    UIStoryboard *sportSB = [UIStoryboard storyboardWithName:@"YDSportsSB" bundle:nil];
+//    self.window.rootViewController = sportSB.instantiateInitialViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

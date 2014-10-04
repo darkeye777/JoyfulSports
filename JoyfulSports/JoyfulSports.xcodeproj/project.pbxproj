@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0042BF819D78C0900E35483 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0042BF719D78C0900E35483 /* main.storyboard */; };
 		D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFA19D78C5600E35483 /* YDLoginViewController.m */; };
 		D0042BFE19D792B400E35483 /* YDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFD19D792B400E35483 /* YDUser.m */; };
 		D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F719D4442B0000004A /* Foundation.framework */; };
@@ -45,7 +44,7 @@
 		D00FA68619D45D3A0000004A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D00FA68519D45D3A0000004A /* AMap.bundle */; };
 		D00FA6E319D52AFB0000004A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA6E219D52AFB0000004A /* MAMapKit.framework */; };
 		D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */ = {isa = PBXBuildFile; fileRef = D01D148E19D65DB2007E7FD0 /* YDSport.m */; };
-		D061D5EB19DA1A06003F1BD4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D061D5EA19DA1A06003F1BD4 /* Login.storyboard */; };
+		D061D5EB19DA1A06003F1BD4 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D061D5EA19DA1A06003F1BD4 /* LoginSB.storyboard */; };
 		D066CC2D19D5762F004704E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2419D5762E004704E5 /* DCPathButton.m */; };
 		D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2619D5762E004704E5 /* DCPathCenterButton.m */; };
 		D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D066CC2819D5762E004704E5 /* DCPathItemButton.m */; };
@@ -55,6 +54,8 @@
 		D066CC3419D5763F004704E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D066CC3319D5763F004704E5 /* AudioToolbox.framework */; };
 		D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0219D690D500A5EF05 /* YDMessageView.m */; };
 		D08790FE19DA50C90061800C /* YDNoRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08790FD19DA50C90061800C /* YDNoRecordView.m */; };
+		D0D3D7AC19DE31FE009BF7D8 /* YDSportsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */; };
+		D0D74F7419DE3013009A1D67 /* YDSportsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */; };
 		D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540119D64FBD0007F461 /* FMDatabase.m */; };
 		D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540319D64FBD0007F461 /* FMDatabaseAdditions.m */; };
 		D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540519D64FBD0007F461 /* FMDatabasePool.m */; };
@@ -78,7 +79,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D0042BF719D78C0900E35483 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		D0042BF919D78C5600E35483 /* YDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLoginViewController.h; sourceTree = "<group>"; };
 		D0042BFA19D78C5600E35483 /* YDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLoginViewController.m; sourceTree = "<group>"; };
 		D0042BFC19D792B400E35483 /* YDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUser.h; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		D00FA6E219D52AFB0000004A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		D01D148D19D65DB2007E7FD0 /* YDSport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSport.h; sourceTree = "<group>"; };
 		D01D148E19D65DB2007E7FD0 /* YDSport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSport.m; sourceTree = "<group>"; };
-		D061D5EA19DA1A06003F1BD4 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D061D5EA19DA1A06003F1BD4 /* LoginSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LoginSB.storyboard; path = ../../../LoginSB.storyboard; sourceTree = "<group>"; };
 		D066CC2319D5762E004704E5 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
 		D066CC2419D5762E004704E5 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
 		D066CC2519D5762E004704E5 /* DCPathCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathCenterButton.h; sourceTree = "<group>"; };
@@ -151,6 +151,9 @@
 		D074EE0219D690D500A5EF05 /* YDMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageView.m; sourceTree = "<group>"; };
 		D08790FC19DA50C90061800C /* YDNoRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNoRecordView.h; sourceTree = "<group>"; };
 		D08790FD19DA50C90061800C /* YDNoRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNoRecordView.m; sourceTree = "<group>"; };
+		D0D3D7AA19DE31FE009BF7D8 /* YDSportsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsController.h; sourceTree = "<group>"; };
+		D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsController.m; sourceTree = "<group>"; };
+		D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YDSportsSB.storyboard; sourceTree = "<group>"; };
 		D0EB540019D64FBD0007F461 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		D0EB540119D64FBD0007F461 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		D0EB540219D64FBD0007F461 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -262,13 +265,11 @@
 		D00FA5FE19D4442B0000004A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0042BF719D78C0900E35483 /* main.storyboard */,
 				D00FA68519D45D3A0000004A /* AMap.bundle */,
 				D00FA60919D4442B0000004A /* Images.xcassets */,
 				D00FA5FF19D4442B0000004A /* JoyfulSports-Info.plist */,
 				D00FA60019D4442B0000004A /* InfoPlist.strings */,
 				D00FA60519D4442B0000004A /* JoyfulSports-Prefix.pch */,
-				D061D5EA19DA1A06003F1BD4 /* Login.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -337,6 +338,7 @@
 				D00FA65819D4482F0000004A /* YDNavigationViewController.m */,
 				D0042BF919D78C5600E35483 /* YDLoginViewController.h */,
 				D0042BFA19D78C5600E35483 /* YDLoginViewController.m */,
+				D061D5EA19DA1A06003F1BD4 /* LoginSB.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,6 +512,9 @@
 			children = (
 				D00FA65119D447CB0000004A /* YDSportsViewController.h */,
 				D00FA65219D447CB0000004A /* YDSportsViewController.m */,
+				D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */,
+				D0D3D7AA19DE31FE009BF7D8 /* YDSportsController.h */,
+				D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -728,12 +733,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00FA68619D45D3A0000004A /* AMap.bundle in Resources */,
-				D0042BF819D78C0900E35483 /* main.storyboard in Resources */,
 				D066CC3219D5762F004704E5 /* selected.caf in Resources */,
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
 				D066CC3019D5762F004704E5 /* bloom.caf in Resources */,
 				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
-				D061D5EB19DA1A06003F1BD4 /* Login.storyboard in Resources */,
+				D0D74F7419DE3013009A1D67 /* YDSportsSB.storyboard in Resources */,
+				D061D5EB19DA1A06003F1BD4 /* LoginSB.storyboard in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -780,6 +785,7 @@
 				D0EF43B319D6F6A40069851C /* TTTAttributedLabel.m in Sources */,
 				D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */,
 				D0EB541619D650580007F461 /* YDSportsTool.m in Sources */,
+				D0D3D7AC19DE31FE009BF7D8 /* YDSportsController.m in Sources */,
 				D0042BFE19D792B400E35483 /* YDUser.m in Sources */,
 				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
 				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
