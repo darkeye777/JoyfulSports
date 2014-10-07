@@ -84,6 +84,9 @@
                                 <rect key="frame" x="236" y="289" width="204" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eOj-LL-GkE" id="UwQ-mV-y5Z"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YL-rB-DE1">
                                 <rect key="frame" x="239" y="371" width="123" height="54"/>
@@ -92,7 +95,7 @@
                                     <constraint firstAttribute="width" constant="116" id="O9L-SV-rAm"/>
                                     <constraint firstAttribute="height" constant="38" id="ubU-LE-5qQ"/>
                                 </constraints>
-                                <state key="normal" title="开启健康之旅">
+                                <state key="normal" title="确定">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

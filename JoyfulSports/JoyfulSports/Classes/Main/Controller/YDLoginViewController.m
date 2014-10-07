@@ -11,7 +11,7 @@
 #import "YDUser.h"
 #import "YDSportsTool.h"
 
-@interface YDLoginViewController ()
+@interface YDLoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *statureTextField;
 @property (weak, nonatomic) IBOutlet UITextField *weightTextField;
@@ -28,18 +28,20 @@
     user.weight = self.weightTextField.text;
     user.age = self.ageTextField.text;
     
-    //保存用户信息到数据库
-    [YDSportsTool saveUserWithUser:user];
-    
     //保存用户信息到偏好中
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:user.username forKey:@"username"];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:user];
+    [defaults setObject:data forKey:@"user"];
     [defaults synchronize];
     
     //跳转到主页
     YDTabBarViewController *tabBarVC = [[YDTabBarViewController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
+}
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 - (void)viewDidLoad

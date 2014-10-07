@@ -44,10 +44,10 @@
 - (void)commonInit {
     // Initialization code
     self.valueString = @"";
-    self.textAlignment = NSTextAlignmentCenter;
-    self.font = [UIFont systemFontOfSize:25];
-    self.boldFont = [UIFont boldSystemFontOfSize:55];
-    self.regularFont = [UIFont systemFontOfSize:55];
+    self.textAlignment = NSTextAlignmentLeft;
+    self.font = [UIFont systemFontOfSize:12];
+    self.boldFont = [UIFont boldSystemFontOfSize:22];
+    self.regularFont = [UIFont systemFontOfSize:22];
     self.countDirection = kCountDirectionUp;
     self.value = 0;
     self.startValue = 0;

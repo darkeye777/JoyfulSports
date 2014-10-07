@@ -15,7 +15,6 @@
 @interface YDSportsViewController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
-
 /**
  *  地图
  */

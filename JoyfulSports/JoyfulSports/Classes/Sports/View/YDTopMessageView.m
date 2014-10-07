@@ -16,9 +16,9 @@
 
 @implementation YDTopMessageView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)init
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
         UILabel *speedLabel = [[UILabel alloc] init];
         speedLabel.textColor = [UIColor whiteColor];
@@ -36,9 +36,11 @@
         
         self.backgroundColor = [UIColor blackColor];
         self.alpha = 0.5;
+
     }
     return self;
 }
+
 
 
 - (void)layoutSubviews

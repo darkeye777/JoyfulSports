@@ -54,6 +54,9 @@
 		D066CC3419D5763F004704E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D066CC3319D5763F004704E5 /* AudioToolbox.framework */; };
 		D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D074EE0219D690D500A5EF05 /* YDMessageView.m */; };
 		D08790FE19DA50C90061800C /* YDNoRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08790FD19DA50C90061800C /* YDNoRecordView.m */; };
+		D0A996DA19E4024800539D8B /* BMIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A996D919E4024800539D8B /* BMIView.xib */; };
+		D0A996DD19E4032C00539D8B /* YDBMIView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A996DC19E4032C00539D8B /* YDBMIView.m */; };
+		D0A996E019E40AEF00539D8B /* YDTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A996DF19E40AEF00539D8B /* YDTimeLabel.m */; };
 		D0D3D7AC19DE31FE009BF7D8 /* YDSportsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */; };
 		D0D74F7419DE3013009A1D67 /* YDSportsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */; };
 		D0EB540B19D64FBD0007F461 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB540119D64FBD0007F461 /* FMDatabase.m */; };
@@ -151,6 +154,11 @@
 		D074EE0219D690D500A5EF05 /* YDMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMessageView.m; sourceTree = "<group>"; };
 		D08790FC19DA50C90061800C /* YDNoRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNoRecordView.h; sourceTree = "<group>"; };
 		D08790FD19DA50C90061800C /* YDNoRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNoRecordView.m; sourceTree = "<group>"; };
+		D0A996D919E4024800539D8B /* BMIView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMIView.xib; sourceTree = "<group>"; };
+		D0A996DB19E4032C00539D8B /* YDBMIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBMIView.h; sourceTree = "<group>"; };
+		D0A996DC19E4032C00539D8B /* YDBMIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBMIView.m; sourceTree = "<group>"; };
+		D0A996DE19E40AEF00539D8B /* YDTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTimeLabel.h; sourceTree = "<group>"; };
+		D0A996DF19E40AEF00539D8B /* YDTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTimeLabel.m; sourceTree = "<group>"; };
 		D0D3D7AA19DE31FE009BF7D8 /* YDSportsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsController.h; sourceTree = "<group>"; };
 		D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsController.m; sourceTree = "<group>"; };
 		D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YDSportsSB.storyboard; sourceTree = "<group>"; };
@@ -493,6 +501,9 @@
 			children = (
 				D08790FC19DA50C90061800C /* YDNoRecordView.h */,
 				D08790FD19DA50C90061800C /* YDNoRecordView.m */,
+				D0A996D919E4024800539D8B /* BMIView.xib */,
+				D0A996DB19E4032C00539D8B /* YDBMIView.h */,
+				D0A996DC19E4032C00539D8B /* YDBMIView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,6 +546,8 @@
 				D074EE0219D690D500A5EF05 /* YDMessageView.m */,
 				D0EF43A819D6EC100069851C /* YDTopMessageView.h */,
 				D0EF43A919D6EC100069851C /* YDTopMessageView.m */,
+				D0A996DE19E40AEF00539D8B /* YDTimeLabel.h */,
+				D0A996DF19E40AEF00539D8B /* YDTimeLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -736,6 +749,7 @@
 				D066CC3219D5762F004704E5 /* selected.caf in Resources */,
 				D00FA60219D4442B0000004A /* InfoPlist.strings in Resources */,
 				D066CC3019D5762F004704E5 /* bloom.caf in Resources */,
+				D0A996DA19E4024800539D8B /* BMIView.xib in Resources */,
 				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
 				D0D74F7419DE3013009A1D67 /* YDSportsSB.storyboard in Resources */,
 				D061D5EB19DA1A06003F1BD4 /* LoginSB.storyboard in Resources */,
@@ -770,7 +784,9 @@
 				D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */,
 				D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */,
 				D00FA62C19D445710000004A /* main.m in Sources */,
+				D0A996E019E40AEF00539D8B /* YDTimeLabel.m in Sources */,
 				D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */,
+				D0A996DD19E4032C00539D8B /* YDBMIView.m in Sources */,
 				D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */,
 				D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */,
 				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,

@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YDUser : NSObject
+@interface YDUser : NSObject <NSCoding>
 
 @property (nonatomic, copy) NSString *username;
+/**
+ *  身高
+ */
 @property (nonatomic, copy) NSString *stature;
+/**
+ *  体重
+ */
 @property (nonatomic, copy) NSString *weight;
 @property (nonatomic, copy) NSString *age;
 

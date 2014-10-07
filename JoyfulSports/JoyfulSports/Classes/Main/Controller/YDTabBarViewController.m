@@ -15,6 +15,7 @@
 #import "YDNavigationViewController.h"
 #import "YDTabBar.h"
 #import "DCPathButton.h"
+#import "YDSportsController.h"
 
 @interface YDTabBarViewController () <YDTabBarDelegate, DCPathButtonDelegate>
 @property (nonatomic, weak) YDTabBar *customTabBar;
@@ -161,8 +162,11 @@
 {
     NSLog(@"You tap at index : %ld", (unsigned long)index);
 
-    YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
-    [self presentViewController:sportsVC animated:YES completion:nil];
+//    YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
+    UIStoryboard *sportSB = [UIStoryboard storyboardWithName:@"YDSportsSB" bundle:nil];
+    YDSportsController *sportVC = sportSB.instantiateInitialViewController;
+    sportVC.title = @"跑步";
+    [self presentViewController:sportVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

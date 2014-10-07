@@ -12,6 +12,7 @@
 #import "YDMessageView.h"
 #import "YDTopMessageView.h"
 #import <MAMapKit/MAMapKit.h>
+#import "TTCounterLabel.h"
 
 @interface YDSportsController () <MAMapViewDelegate, YDMessageViewDelegate, CLLocationManagerDelegate>
 /**
@@ -62,6 +63,19 @@
  *  提示
  */
 @property (nonatomic, weak) IBOutlet YDTopMessageView *topMsgView;
+/**
+ *  显示时间
+ */
+@property (weak, nonatomic) IBOutlet TTCounterLabel *timeLabel;
+/**
+ *  距离
+ */
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+/**
+ *  速度
+ */
+@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+
 @end
 
 @implementation YDSportsController
@@ -112,7 +126,6 @@
     topMsgView.frame = CGRectMake(10, 31, 250, 35);
     self.topMsgView = topMsgView;
     [self.view addSubview:topMsgView];
-    
 }
 
 #pragma mark - MAMapViewDelegate
@@ -128,6 +141,14 @@
         
         //总路程
         self.totalDistance += distance;
+        
+        ////计算速度和路程,显示
+        unsigned long time =  self.timeLabel.currentValue;
+        double sprotTime = time / 1000.0;
+        double speed = self.totalDistance / sprotTime;
+        self.distanceLabel.text = [NSString stringWithFormat:@"%.1f km", self.totalDistance / 1000];
+        self.speedLabel.text = [NSString stringWithFormat:@"%.1f m/s", speed];
+
     }
     
     [self.points addObject:location];
@@ -229,6 +250,22 @@
         [self.routeLineArray addObject:self.routeLine];
         [self.mapView addOverlay:self.routeLine];
     }
+}
+
+/**
+ *  调整地图大小
+ */
+- (IBAction)changeClick {
+    self.messageView.hidden = YES;
+    self.mapContainer.frame = [UIScreen mainScreen].bounds;
+}
+
+- (IBAction)startBtnClick {
+    [self.timeLabel start];
+}
+
+- (IBAction)endBtnClick {
+    [self.timeLabel stop];
 }
 
 #pragma mark - 懒加载

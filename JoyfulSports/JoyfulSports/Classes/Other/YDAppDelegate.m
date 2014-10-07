@@ -9,6 +9,7 @@
 #import "YDAppDelegate.h"
 #import "YDTabBarViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import "YDUser.h"
 
 @interface YDAppDelegate () <CLLocationManagerDelegate>
 {
@@ -29,19 +30,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *username = [defaults objectForKey:@"username"];
+    NSData *userdata = [defaults objectForKey:@"user"];
+    YDUser *user = [NSKeyedUnarchiver unarchiveObjectWithData:userdata];
     
-    if (username != nil) {
+    if (user.username != nil) {
         YDTabBarViewController *tabBarVC = [[YDTabBarViewController alloc] init];
         self.window.rootViewController = tabBarVC;
     } else {
         UIStoryboard *stroy = [UIStoryboard storyboardWithName:@"LoginSB" bundle:nil];
-//        UIViewController *vc = [stroy instantiateInitialViewController];
         self.window.rootViewController = stroy.instantiateInitialViewController;
     }
-    
-//    UIStoryboard *sportSB = [UIStoryboard storyboardWithName:@"YDSportsSB" bundle:nil];
-//    self.window.rootViewController = sportSB.instantiateInitialViewController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
