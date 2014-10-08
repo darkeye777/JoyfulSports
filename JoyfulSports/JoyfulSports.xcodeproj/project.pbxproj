@@ -25,7 +25,6 @@
 		D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64919D447990000004A /* YDMoreViewController.m */; };
 		D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64C19D447A70000004A /* YDPlanViewController.m */; };
 		D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA64F19D447B70000004A /* YDRecordViewController.m */; };
-		D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65219D447CB0000004A /* YDSportsViewController.m */; };
 		D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65519D4481C0000004A /* YDTabBarViewController.m */; };
 		D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65819D4482F0000004A /* YDNavigationViewController.m */; };
 		D00FA65E19D449370000004A /* YDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00FA65B19D449370000004A /* YDTabBar.m */; };
@@ -110,8 +109,6 @@
 		D00FA64C19D447A70000004A /* YDPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPlanViewController.m; sourceTree = "<group>"; };
 		D00FA64E19D447B70000004A /* YDRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRecordViewController.h; sourceTree = "<group>"; };
 		D00FA64F19D447B70000004A /* YDRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRecordViewController.m; sourceTree = "<group>"; };
-		D00FA65119D447CB0000004A /* YDSportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSportsViewController.h; sourceTree = "<group>"; };
-		D00FA65219D447CB0000004A /* YDSportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSportsViewController.m; sourceTree = "<group>"; };
 		D00FA65419D4481C0000004A /* YDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTabBarViewController.h; sourceTree = "<group>"; };
 		D00FA65519D4481C0000004A /* YDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTabBarViewController.m; sourceTree = "<group>"; };
 		D00FA65719D4482F0000004A /* YDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNavigationViewController.h; sourceTree = "<group>"; };
@@ -521,8 +518,6 @@
 		D00FA64219D447410000004A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D00FA65119D447CB0000004A /* YDSportsViewController.h */,
-				D00FA65219D447CB0000004A /* YDSportsViewController.m */,
 				D0D74F7319DE3013009A1D67 /* YDSportsSB.storyboard */,
 				D0D3D7AA19DE31FE009BF7D8 /* YDSportsController.h */,
 				D0D3D7AB19DE31FE009BF7D8 /* YDSportsController.m */,
@@ -773,7 +768,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D066CC2E19D5762F004704E5 /* DCPathCenterButton.m in Sources */,
-				D00FA65319D447CB0000004A /* YDSportsViewController.m in Sources */,
 				D0EF43AA19D6EC100069851C /* YDTopMessageView.m in Sources */,
 				D0EF43B219D6F6A40069851C /* TTCounterLabel.m in Sources */,
 				D00FA67119D458840000004A /* UIImage+TZ.m in Sources */,

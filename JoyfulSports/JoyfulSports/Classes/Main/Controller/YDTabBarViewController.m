@@ -9,7 +9,6 @@
 #import "YDTabBarViewController.h"
 #import "YDRecordViewController.h"
 #import "YDCourseViewController.h"
-#import "YDSportsViewController.h"
 #import "YDPlanViewController.h"
 #import "YDMoreViewController.h"
 #import "YDNavigationViewController.h"
@@ -143,14 +142,14 @@
                                                             backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
                                                  backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
-    DCPathItemButton *itemButton_5 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
-                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
-                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
-                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+//    DCPathItemButton *itemButton_5 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
+//                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
+//                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+//                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
     // Add the item button into the center button
     //
-    [dcPathButton addPathItems:@[itemButton_1, itemButton_2, itemButton_3, itemButton_4, itemButton_5]];
+    [dcPathButton addPathItems:@[itemButton_1, itemButton_2, itemButton_3, itemButton_4]];
     
     [self.view addSubview:dcPathButton];
     
@@ -160,12 +159,31 @@
 
 - (void)itemButtonTappedAtIndex:(NSUInteger)index
 {
-    NSLog(@"You tap at index : %ld", (unsigned long)index);
-
-//    YDSportsViewController *sportsVC = [[YDSportsViewController alloc] init];
+    
     UIStoryboard *sportSB = [UIStoryboard storyboardWithName:@"YDSportsSB" bundle:nil];
     YDSportsController *sportVC = sportSB.instantiateInitialViewController;
-    sportVC.title = @"跑步";
+    NSString *title = nil;
+    //根据index选择标题
+    switch (index) {
+        case 0:
+            title = @"跑步";
+            sportVC.step = 5;
+            break;
+        case 1:
+            title = @"骑行";
+            sportVC.step = 10;
+            break;
+        case 2:
+            title = @"徒步";
+            sportVC.step = 1;
+            break;
+        case 3:
+            title = @"跳跃";
+            break;
+        default:
+            break;
+    }
+    sportVC.title = title;
     [self presentViewController:sportVC animated:YES completion:nil];
 }
 
@@ -174,9 +192,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//-(UIStatusBarStyle)preferredStatusBarStyle{
-//    return UIStatusBarStyleLightContent;
-//}
 
 @end

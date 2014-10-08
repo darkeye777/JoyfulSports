@@ -75,6 +75,10 @@
  *  速度
  */
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+/**
+ *  是否开始
+ */
+@property (assign, nonatomic, getter = isStart) BOOL start;
 
 @end
 
@@ -88,28 +92,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //信息显示
-//    YDMessageView *messageView = [[YDMessageView alloc] init];
-//    CGFloat height = self.view.height - 64 - 49;
-//    CGFloat msgViewW = self.view.width;
-//    CGFloat msgViewH = height * 0.35;
-//    CGFloat msgViewX = 0;
-//    CGFloat msgViewY = self.view.height - msgViewH;
-//    messageView.frame = CGRectMake(msgViewX, msgViewY, msgViewW, msgViewH);
-//    //代理
-//    messageView.delegate = self;
-//    
-//    self.messageView = messageView;
-//    [self.view addSubview:messageView];
-    
     self.messageView.delegate = self;
     
     //如果是iOS8,会执行定位方法
     if (iOS8) {
         YDMapLocationiOS8
     }
-    
-    
     
     //地图显示
     self.mapView=[[MAMapView alloc] initWithFrame:self.mapContainer.bounds];
@@ -131,13 +119,15 @@
 #pragma mark - MAMapViewDelegate
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation
 {
+    if (!self.isStart) {
+        return;
+    }
     CLLocation *location = userLocation.location;
     //判断距离
     if (self.points.count) {
         CLLocationDistance distance = [location distanceFromLocation:self.currentLocation];
-        if (distance < 5.f) {
-            return;
-        }
+        if (distance < self.step) {
+            return;        }
         
         //总路程
         self.totalDistance += distance;
@@ -154,11 +144,13 @@
     [self.points addObject:location];
     [self configureRoutes];
     
+    //设置显示范围
     MACoordinateRegion region = MACoordinateRegionMake(userLocation.coordinate, !self.currentLocation ? MACoordinateSpanMake(0.024692, 0.024692) : self.mapView.region.span);
     [self.mapView setRegion:region animated:YES];
+    //记录当前点
     self.currentLocation = location;
     
-    if (self.totalDistance >= 5) {
+    if (self.totalDistance >= 10) {
         MAPointAnnotation *anno = [[MAPointAnnotation alloc] init];
         CLLocation *location = [self.points firstObject];
         anno.coordinate = location.coordinate;
@@ -167,7 +159,7 @@
     }
     
     YDSport *sport = [[YDSport alloc] init];
-    sport.sportTime = [self.messageView currentTime];
+    sport.sportTime = [self.timeLabel currentValue];
     sport.distance = [NSString stringWithFormat:@"%f", self.totalDistance];
     self.topMsgView.sport = sport;
 }
@@ -221,13 +213,6 @@
         anno.title = @"终点";
         [self.mapView addAnnotation:anno];
     }
-    //    [UIView animateWithDuration:0.5 animations:^{
-    //        self.mapView.height = self.view.height;
-    //        self.mapView.y = 20;
-    //    }];
-    //
-    //    self.tabBarController.tabBar.hidden = YES;
-    //    self.navigationController.navigationBar.hidden = YES;
 }
 
 #pragma mark - 方法
@@ -260,12 +245,19 @@
     self.mapContainer.frame = [UIScreen mainScreen].bounds;
 }
 
+/**
+ *  开始
+ */
 - (IBAction)startBtnClick {
     [self.timeLabel start];
+    self.start = YES;
 }
-
+/**
+ *  结束
+ */
 - (IBAction)endBtnClick {
     [self.timeLabel stop];
+    self.start = NO;
 }
 
 #pragma mark - 懒加载
@@ -292,6 +284,4 @@
     }
     return _messageView;
 }
-
-
 @end

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface YDSportsController : UIViewController
+/**
+ *  取值间距
+ */
+@property (nonatomic, assign) int step;
 
 @end
