@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3218634C19E6AFC800C13E42 /* YDAddPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218634A19E6AFC800C13E42 /* YDAddPlanViewController.m */; };
 		3218634D19E6AFC800C13E42 /* YDAddPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3218634B19E6AFC800C13E42 /* YDAddPlanViewController.xib */; };
+		3218635019E6B2AC00C13E42 /* YDOnePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218634F19E6B2AC00C13E42 /* YDOnePlanViewController.m */; };
 		D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFA19D78C5600E35483 /* YDLoginViewController.m */; };
 		D0042BFE19D792B400E35483 /* YDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFD19D792B400E35483 /* YDUser.m */; };
 		D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F719D4442B0000004A /* Foundation.framework */; };
@@ -86,6 +87,8 @@
 		3218634919E6AFC800C13E42 /* YDAddPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAddPlanViewController.h; sourceTree = "<group>"; };
 		3218634A19E6AFC800C13E42 /* YDAddPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAddPlanViewController.m; sourceTree = "<group>"; };
 		3218634B19E6AFC800C13E42 /* YDAddPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDAddPlanViewController.xib; sourceTree = "<group>"; };
+		3218634E19E6B2AC00C13E42 /* YDOnePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOnePlanViewController.h; sourceTree = "<group>"; };
+		3218634F19E6B2AC00C13E42 /* YDOnePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOnePlanViewController.m; sourceTree = "<group>"; };
 		D0042BF919D78C5600E35483 /* YDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLoginViewController.h; sourceTree = "<group>"; };
 		D0042BFA19D78C5600E35483 /* YDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLoginViewController.m; sourceTree = "<group>"; };
 		D0042BFC19D792B400E35483 /* YDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUser.h; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 				3218634919E6AFC800C13E42 /* YDAddPlanViewController.h */,
 				3218634A19E6AFC800C13E42 /* YDAddPlanViewController.m */,
 				3218634B19E6AFC800C13E42 /* YDAddPlanViewController.xib */,
+				3218634E19E6B2AC00C13E42 /* YDOnePlanViewController.h */,
+				3218634F19E6B2AC00C13E42 /* YDOnePlanViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -788,6 +793,7 @@
 				D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */,
 				D00FA62C19D445710000004A /* main.m in Sources */,
 				D0A996E019E40AEF00539D8B /* YDTimeLabel.m in Sources */,
+				3218635019E6B2AC00C13E42 /* YDOnePlanViewController.m in Sources */,
 				D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */,
 				D0A996DD19E4032C00539D8B /* YDBMIView.m in Sources */,
 				D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */,
