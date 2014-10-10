@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321AD57F19E77F07001375CC /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD57B19E77F07001375CC /* MBProgressHUD+NJ.m */; };
+		321AD58019E77F07001375CC /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 321AD57C19E77F07001375CC /* MBProgressHUD.bundle */; };
+		321AD58119E77F07001375CC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD57E19E77F07001375CC /* MBProgressHUD.m */; };
+		321AD59619E79DEE001375CC /* YDCellGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD59519E79DEE001375CC /* YDCellGroup.m */; };
+		321AD59919E79F73001375CC /* YDCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD59819E79F73001375CC /* YDCellItem.m */; };
+		321AD59D19E79FF7001375CC /* YDPlanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD59C19E79FF7001375CC /* YDPlanCell.m */; };
+		321AD5A019E7A0EA001375CC /* YDCellLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD59F19E7A0EA001375CC /* YDCellLabelItem.m */; };
+		321AD5A319E7A87D001375CC /* YDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD5A219E7A87D001375CC /* YDBaseViewController.m */; };
+		321AD5A919E7B15B001375CC /* YDFirstPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD5A819E7B15B001375CC /* YDFirstPlanViewController.m */; };
 		D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFA19D78C5600E35483 /* YDLoginViewController.m */; };
 		D0042BFE19D792B400E35483 /* YDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0042BFD19D792B400E35483 /* YDUser.m */; };
 		D00FA5F819D4442B0000004A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00FA5F719D4442B0000004A /* Foundation.framework */; };
@@ -81,6 +90,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321AD57A19E77F07001375CC /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		321AD57B19E77F07001375CC /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
+		321AD57C19E77F07001375CC /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		321AD57D19E77F07001375CC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		321AD57E19E77F07001375CC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		321AD59419E79DEE001375CC /* YDCellGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCellGroup.h; sourceTree = "<group>"; };
+		321AD59519E79DEE001375CC /* YDCellGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCellGroup.m; sourceTree = "<group>"; };
+		321AD59719E79F73001375CC /* YDCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCellItem.h; sourceTree = "<group>"; };
+		321AD59819E79F73001375CC /* YDCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCellItem.m; sourceTree = "<group>"; };
+		321AD59B19E79FF7001375CC /* YDPlanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPlanCell.h; sourceTree = "<group>"; };
+		321AD59C19E79FF7001375CC /* YDPlanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPlanCell.m; sourceTree = "<group>"; };
+		321AD59E19E7A0EA001375CC /* YDCellLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCellLabelItem.h; sourceTree = "<group>"; };
+		321AD59F19E7A0EA001375CC /* YDCellLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCellLabelItem.m; sourceTree = "<group>"; };
+		321AD5A119E7A87D001375CC /* YDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaseViewController.h; sourceTree = "<group>"; };
+		321AD5A219E7A87D001375CC /* YDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaseViewController.m; sourceTree = "<group>"; };
+		321AD5A719E7B15B001375CC /* YDFirstPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFirstPlanViewController.h; sourceTree = "<group>"; };
+		321AD5A819E7B15B001375CC /* YDFirstPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFirstPlanViewController.m; sourceTree = "<group>"; };
 		D0042BF919D78C5600E35483 /* YDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLoginViewController.h; sourceTree = "<group>"; };
 		D0042BFA19D78C5600E35483 /* YDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLoginViewController.m; sourceTree = "<group>"; };
 		D0042BFC19D792B400E35483 /* YDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUser.h; sourceTree = "<group>"; };
@@ -216,6 +242,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321AD57919E77F07001375CC /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				321AD57A19E77F07001375CC /* MBProgressHUD+NJ.h */,
+				321AD57B19E77F07001375CC /* MBProgressHUD+NJ.m */,
+				321AD57C19E77F07001375CC /* MBProgressHUD.bundle */,
+				321AD57D19E77F07001375CC /* MBProgressHUD.h */,
+				321AD57E19E77F07001375CC /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		321AD59119E79D96001375CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				321AD59319E79DB1001375CC /* CellItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		321AD59219E79D96001375CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				321AD59A19E79FCD001375CC /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		321AD59319E79DB1001375CC /* CellItem */ = {
+			isa = PBXGroup;
+			children = (
+				321AD59419E79DEE001375CC /* YDCellGroup.h */,
+				321AD59519E79DEE001375CC /* YDCellGroup.m */,
+				321AD59719E79F73001375CC /* YDCellItem.h */,
+				321AD59819E79F73001375CC /* YDCellItem.m */,
+				321AD59E19E7A0EA001375CC /* YDCellLabelItem.h */,
+				321AD59F19E7A0EA001375CC /* YDCellLabelItem.m */,
+			);
+			path = CellItem;
+			sourceTree = "<group>";
+		};
+		321AD59A19E79FCD001375CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				321AD59B19E79FF7001375CC /* YDPlanCell.h */,
+				321AD59C19E79FF7001375CC /* YDPlanCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D00FA5EB19D4442B0000004A = {
 			isa = PBXGroup;
 			children = (
@@ -437,9 +513,9 @@
 		D00FA63919D447410000004A /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				321AD59119E79D96001375CC /* Model */,
+				321AD59219E79D96001375CC /* View */,
 				D00FA63A19D447410000004A /* Controller */,
-				D00FA63B19D447410000004A /* Model */,
-				D00FA63C19D447410000004A /* View */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -449,22 +525,12 @@
 			children = (
 				D00FA64B19D447A70000004A /* YDPlanViewController.h */,
 				D00FA64C19D447A70000004A /* YDPlanViewController.m */,
+				321AD5A119E7A87D001375CC /* YDBaseViewController.h */,
+				321AD5A219E7A87D001375CC /* YDBaseViewController.m */,
+				321AD5A719E7B15B001375CC /* YDFirstPlanViewController.h */,
+				321AD5A819E7B15B001375CC /* YDFirstPlanViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		D00FA63B19D447410000004A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D00FA63C19D447410000004A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D00FA63D19D447410000004A /* Record */ = {
@@ -563,6 +629,7 @@
 		D066CC2019D5760B004704E5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				321AD57919E77F07001375CC /* MBProgressHUD */,
 				D0EB53FF19D64FBD0007F461 /* fmdb */,
 				D066CC2119D5762E004704E5 /* DCPathButton */,
 			);
@@ -747,6 +814,7 @@
 				D0A996DA19E4024800539D8B /* BMIView.xib in Resources */,
 				D066CC3119D5762F004704E5 /* fold.caf in Resources */,
 				D0D74F7419DE3013009A1D67 /* YDSportsSB.storyboard in Resources */,
+				321AD58019E77F07001375CC /* MBProgressHUD.bundle in Resources */,
 				D061D5EB19DA1A06003F1BD4 /* LoginSB.storyboard in Resources */,
 				D00FA60A19D4442B0000004A /* Images.xcassets in Resources */,
 			);
@@ -777,28 +845,36 @@
 				D00FA65F19D449370000004A /* YDTabBarButton.m in Sources */,
 				D00FA64A19D447990000004A /* YDMoreViewController.m in Sources */,
 				D0EB540F19D64FBD0007F461 /* FMResultSet.m in Sources */,
+				321AD58119E77F07001375CC /* MBProgressHUD.m in Sources */,
 				D00FA62C19D445710000004A /* main.m in Sources */,
 				D0A996E019E40AEF00539D8B /* YDTimeLabel.m in Sources */,
 				D00FA65619D4481C0000004A /* YDTabBarViewController.m in Sources */,
 				D0A996DD19E4032C00539D8B /* YDBMIView.m in Sources */,
 				D00FA65019D447B70000004A /* YDRecordViewController.m in Sources */,
 				D00FA67019D458840000004A /* UIBarButtonItem+TZ.m in Sources */,
+				321AD59919E79F73001375CC /* YDCellItem.m in Sources */,
 				D00FA65919D4482F0000004A /* YDNavigationViewController.m in Sources */,
 				D00FA62D19D445710000004A /* YDAppDelegate.m in Sources */,
 				D0042BFB19D78C5600E35483 /* YDLoginViewController.m in Sources */,
+				321AD57F19E77F07001375CC /* MBProgressHUD+NJ.m in Sources */,
 				D00FA64719D447870000004A /* YDCourseViewController.m in Sources */,
 				D074EE0319D690D500A5EF05 /* YDMessageView.m in Sources */,
+				321AD5A319E7A87D001375CC /* YDBaseViewController.m in Sources */,
 				D0EB540C19D64FBD0007F461 /* FMDatabaseAdditions.m in Sources */,
 				D01D148F19D65DB2007E7FD0 /* YDSport.m in Sources */,
 				D066CC2F19D5762F004704E5 /* DCPathItemButton.m in Sources */,
+				321AD59619E79DEE001375CC /* YDCellGroup.m in Sources */,
 				D0EB540E19D64FBD0007F461 /* FMDatabaseQueue.m in Sources */,
+				321AD59D19E79FF7001375CC /* YDPlanCell.m in Sources */,
 				D0EF43B319D6F6A40069851C /* TTTAttributedLabel.m in Sources */,
+				321AD5A919E7B15B001375CC /* YDFirstPlanViewController.m in Sources */,
 				D0EB540D19D64FBD0007F461 /* FMDatabasePool.m in Sources */,
 				D0EB541619D650580007F461 /* YDSportsTool.m in Sources */,
 				D0D3D7AC19DE31FE009BF7D8 /* YDSportsController.m in Sources */,
 				D0042BFE19D792B400E35483 /* YDUser.m in Sources */,
 				D00FA64D19D447A70000004A /* YDPlanViewController.m in Sources */,
 				D00FA65E19D449370000004A /* YDTabBar.m in Sources */,
+				321AD5A019E7A0EA001375CC /* YDCellLabelItem.m in Sources */,
 				D08790FE19DA50C90061800C /* YDNoRecordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

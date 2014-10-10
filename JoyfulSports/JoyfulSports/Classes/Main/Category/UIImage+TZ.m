@@ -28,10 +28,33 @@
     return resultImage;
 }
 
-+ (UIImage *)resizedImageWithName:(NSString *)name
+
++ (instancetype)resizableImageWithName:(NSString *)imageName
 {
-    UIImage *image = [self imageWithName:name];
-    return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
+    /*
+     // 1.创建图片
+     UIImage *image = [UIImage imageWithName:imageName];
+     // 2.处理图片
+     image =  [image stretchableImageWithLeftCapWidth:0.5 topCapHeight:0.5];
+     // 3.返回图片
+     return image;
+     */
+    
+    return [self resizableImageWithName:imageName leftRatio:0.5 topRatio:0.5];
+    
+    
+}
++ (instancetype)resizableImageWithName:(NSString *)imageName leftRatio:(CGFloat)leftRatio topRatio:(CGFloat)topRatio
+{
+    // 1.创建图片
+    UIImage *image = [UIImage imageWithName:imageName];
+    // 2.处理图片
+    CGFloat left = image.size.width * leftRatio;
+    CGFloat top = image.size.height * topRatio;
+    
+    image =  [image stretchableImageWithLeftCapWidth:left topCapHeight:top];
+    // 3.返回图片
+    return image;
 }
 
 @end

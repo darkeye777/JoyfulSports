@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface YDPlanViewController : UITableViewController
-
+#import "YDBaseViewController.h"
+@interface YDPlanViewController : YDBaseViewController
 @end

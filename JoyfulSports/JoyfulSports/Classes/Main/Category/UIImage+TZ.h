@@ -19,8 +19,17 @@
  */
 + (instancetype)imageWithName:(NSString *)imageName;
 
+
++ (instancetype)resizableImageWithName:(NSString *)imageName;
+
 /**
- *  返回一张自由拉伸的图片
+ *  根据图片名称创建一张拉伸不变形的图片
+ *
+ *  @param imageName  图片名称
+ *  @param leftRatio  左边不拉伸比例
+ *  @param rigthRatio 顶部不拉伸比例
+ *
+ *  @return 拉伸不变形的图片
  */
-+ (UIImage *)resizedImageWithName:(NSString *)name;
++ (instancetype)resizableImageWithName:(NSString *)imageName leftRatio:(CGFloat)leftRatio topRatio:(CGFloat)topRatio;
 @end

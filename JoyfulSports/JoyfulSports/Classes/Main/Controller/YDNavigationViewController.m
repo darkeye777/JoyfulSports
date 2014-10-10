@@ -45,8 +45,11 @@
     
     //设置标题属性
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:19];
+    navBar.translucent = NO;//设置半透明
+    navBar.barTintColor = [UIColor colorWithRed:39.0/255.0 green:53.0/255.0 blue:75.0/255.0 alpha:1.0];
+    
     [navBar setTitleTextAttributes:attrs];
 }
 

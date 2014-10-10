@@ -33,11 +33,13 @@
 #pragma mark - 设置背景
 - (void)setupBg
 {
-    if (iOS7) {
-        self.backgroundColor = [UIColor whiteColor];
-    } else {
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithName:@"tabbar_background"]];
-    }
+//    if (iOS7) {
+//        self.backgroundColor = [UIColor whiteColor];
+//    } else {
+//        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithName:@"tabbar_background"]];
+//    }
+    self.backgroundColor = [UIColor colorWithRed:35.0/255.0 green:47.0/255.0 blue:65.0/255.0 alpha:1.0];
+
 }
 
 #pragma mark - 设置frame

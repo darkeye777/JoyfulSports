@@ -23,6 +23,7 @@
 {
 
     application.statusBarHidden = NO;
+    application.statusBarStyle = UIStatusBarStyleLightContent;
     
     //地图apiKey
     [MAMapServices sharedServices].apiKey =@"e46b6db9cfa968b554ebfb3221eb4762";
